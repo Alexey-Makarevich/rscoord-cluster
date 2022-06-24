@@ -11,5 +11,5 @@ Full log attached - 20220624-deb-coord-702.log .
 Environment:
  - clean Debian 11
  - docker 20.10.17
- - redis image 7.0.2 (2e50d70ba706)
+ - Redis image 7.0.2 (2e50d70ba706)
  - RediSearch version Git=master-75cf8b4c
