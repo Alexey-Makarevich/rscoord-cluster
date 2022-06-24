@@ -1,0 +1,1344 @@
+axel@debian:~/20220624-rscoord-7.0.2$ sudo docker compose up
+[+] Running 8/8
+ ⠿ Network 20220624-rscoord-702_app_subnet         Created                                                                                                                                      0.0s
+ ⠿ Container 20220624-rscoord-702-redis-node-3-1   Created                                                                                                                                      0.1s
+ ⠿ Container 20220624-rscoord-702-redis-node-6-1   Created                                                                                                                                      0.1s
+ ⠿ Container 20220624-rscoord-702-redis-node-4-1   Created                                                                                                                                      0.1s
+ ⠿ Container 20220624-rscoord-702-redis-node-2-1   Created                                                                                                                                      0.1s
+ ⠿ Container 20220624-rscoord-702-redis-node-5-1   Created                                                                                                                                      0.1s
+ ⠿ Container 20220624-rscoord-702-redis-node-1-1   Created                                                                                                                                      0.1s
+ ⠿ Container 20220624-rscoord-702-redis-cluster-1  Created                                                                                                                                      0.0s
+Attaching to 20220624-rscoord-702-redis-cluster-1, 20220624-rscoord-702-redis-node-1-1, 20220624-rscoord-702-redis-node-2-1, 20220624-rscoord-702-redis-node-3-1, 20220624-rscoord-702-redis-node-4-1, 20220624-rscoord-702-redis-node-5-1, 20220624-rscoord-702-redis-node-6-1
+20220624-rscoord-702-redis-node-4-1   | 1:C 24 Jun 2022 17:22:53.739 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+20220624-rscoord-702-redis-node-4-1   | 1:C 24 Jun 2022 17:22:53.739 # Redis version=7.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+20220624-rscoord-702-redis-node-4-1   | 1:C 24 Jun 2022 17:22:53.739 # Configuration loaded
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:53.740 * monotonic clock: POSIX clock_gettime
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:53.741 * No cluster configuration found, I'm 35736c45134473348843e39c3ce97180de46a450
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:53.743 * Running mode=cluster, port=6376.
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:53.743 # Server initialized
+20220624-rscoord-702-redis-node-4-1   | RSValue size: 16
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:53.745 * <search> redis version observed by redisearch : 7.0.2
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:53.745 * <search> Redis version found by RedisSearch : 7.0.2 - oss
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:53.745 * <search> RediSearch version 99.99.99 (Git=master-75cf8b4c)
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:53.745 * <search> Low level api version 1 initialized successfully
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:53.745 * <search> concurrent writes: OFF, gc: ON, prefix min length: 2, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, search pool size: 20, index pool size: 8,
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:53.746 * <search> Initialized thread pool!
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:53.746 * <search> Enabled role change notification
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:53.746 * <search> Cluster configuration: 0 partitions, type: 0, coordinator timeout: 0ms
+20220624-rscoord-702-redis-node-4-1   | Creating thread...
+20220624-rscoord-702-redis-node-4-1   | Thread created
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:53.747 * <search> Register write commands
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:53.747 * Module 'search' loaded from /usr/lib/redis/module-oss.so
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:53.749 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:53.750 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:53.750 * Ready to accept connections
+20220624-rscoord-702-redis-node-1-1   | 1:C 24 Jun 2022 17:22:54.016 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+20220624-rscoord-702-redis-node-1-1   | 1:C 24 Jun 2022 17:22:54.016 # Redis version=7.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+20220624-rscoord-702-redis-node-1-1   | 1:C 24 Jun 2022 17:22:54.016 # Configuration loaded
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:54.017 * monotonic clock: POSIX clock_gettime
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:54.017 * No cluster configuration found, I'm 55b4441e5a9c12a5585455b45652bb32d6233651
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:54.019 * Running mode=cluster, port=6373.
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:54.019 # Server initialized
+20220624-rscoord-702-redis-node-1-1   | RSValue size: 16
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:54.021 * <search> redis version observed by redisearch : 7.0.2
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:54.021 * <search> Redis version found by RedisSearch : 7.0.2 - oss
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:54.021 * <search> RediSearch version 99.99.99 (Git=master-75cf8b4c)
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:54.021 * <search> Low level api version 1 initialized successfully
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:54.021 * <search> concurrent writes: OFF, gc: ON, prefix min length: 2, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, search pool size: 20, index pool size: 8,
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:54.021 * <search> Initialized thread pool!
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:54.021 * <search> Enabled role change notification
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:54.022 * <search> Cluster configuration: 0 partitions, type: 0, coordinator timeout: 0ms
+20220624-rscoord-702-redis-node-1-1   | Creating thread...
+20220624-rscoord-702-redis-node-1-1   | Thread created
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:54.022 * <search> Register write commands
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:54.022 * Module 'search' loaded from /usr/lib/redis/module-oss.so
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:54.024 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:54.025 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:54.025 * Ready to accept connections
+20220624-rscoord-702-redis-node-3-1   | 1:C 24 Jun 2022 17:22:54.186 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+20220624-rscoord-702-redis-node-3-1   | 1:C 24 Jun 2022 17:22:54.186 # Redis version=7.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+20220624-rscoord-702-redis-node-3-1   | 1:C 24 Jun 2022 17:22:54.186 # Configuration loaded
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:54.186 * monotonic clock: POSIX clock_gettime
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:54.187 * No cluster configuration found, I'm a9160f773dfa624d2eabf9685e17da5cda3832b9
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:54.188 * Running mode=cluster, port=6375.
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:54.188 # Server initialized
+20220624-rscoord-702-redis-node-3-1   | RSValue size: 16
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:54.190 * <search> redis version observed by redisearch : 7.0.2
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:54.190 * <search> Redis version found by RedisSearch : 7.0.2 - oss
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:54.190 * <search> RediSearch version 99.99.99 (Git=master-75cf8b4c)
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:54.190 * <search> Low level api version 1 initialized successfully
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:54.190 * <search> concurrent writes: OFF, gc: ON, prefix min length: 2, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, search pool size: 20, index pool size: 8,
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:54.190 * <search> Initialized thread pool!
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:54.190 * <search> Enabled role change notification
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:54.190 * <search> Cluster configuration: 0 partitions, type: 0, coordinator timeout: 0ms
+20220624-rscoord-702-redis-node-3-1   | Creating thread...
+20220624-rscoord-702-redis-node-3-1   | Thread created
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:54.191 * <search> Register write commands
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:54.191 * Module 'search' loaded from /usr/lib/redis/module-oss.so
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:54.193 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:54.194 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:54.194 * Ready to accept connections
+20220624-rscoord-702-redis-node-5-1   | 1:C 24 Jun 2022 17:22:54.219 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+20220624-rscoord-702-redis-node-5-1   | 1:C 24 Jun 2022 17:22:54.219 # Redis version=7.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+20220624-rscoord-702-redis-node-5-1   | 1:C 24 Jun 2022 17:22:54.219 # Configuration loaded
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:54.219 * monotonic clock: POSIX clock_gettime
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:54.220 * No cluster configuration found, I'm 5f1d24948803d6376f0a5e1ecc4252c5317089d2
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:54.222 * Running mode=cluster, port=6377.
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:54.222 # Server initialized
+20220624-rscoord-702-redis-node-5-1   | RSValue size: 16
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:54.224 * <search> redis version observed by redisearch : 7.0.2
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:54.224 * <search> Redis version found by RedisSearch : 7.0.2 - oss
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:54.224 * <search> RediSearch version 99.99.99 (Git=master-75cf8b4c)
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:54.224 * <search> Low level api version 1 initialized successfully
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:54.224 * <search> concurrent writes: OFF, gc: ON, prefix min length: 2, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, search pool size: 20, index pool size: 8,
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:54.225 * <search> Initialized thread pool!
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:54.225 * <search> Enabled role change notification
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:54.225 * <search> Cluster configuration: 0 partitions, type: 0, coordinator timeout: 0ms
+20220624-rscoord-702-redis-node-5-1   | Creating thread...
+20220624-rscoord-702-redis-node-5-1   | Thread created
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:54.226 * <search> Register write commands
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:54.226 * Module 'search' loaded from /usr/lib/redis/module-oss.so
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:54.236 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:54.239 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:54.239 * Ready to accept connections
+20220624-rscoord-702-redis-node-6-1   | 1:C 24 Jun 2022 17:22:54.315 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+20220624-rscoord-702-redis-node-6-1   | 1:C 24 Jun 2022 17:22:54.315 # Redis version=7.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+20220624-rscoord-702-redis-node-6-1   | 1:C 24 Jun 2022 17:22:54.315 # Configuration loaded
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:54.316 * monotonic clock: POSIX clock_gettime
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:54.316 * No cluster configuration found, I'm a525016630f72e01bf4d7802079079df41523e0e
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:54.318 * Running mode=cluster, port=6378.
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:54.318 # Server initialized
+20220624-rscoord-702-redis-node-6-1   | RSValue size: 16
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:54.320 * <search> redis version observed by redisearch : 7.0.2
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:54.320 * <search> Redis version found by RedisSearch : 7.0.2 - oss
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:54.320 * <search> RediSearch version 99.99.99 (Git=master-75cf8b4c)
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:54.320 * <search> Low level api version 1 initialized successfully
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:54.320 * <search> concurrent writes: OFF, gc: ON, prefix min length: 2, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, search pool size: 20, index pool size: 8,
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:54.320 * <search> Initialized thread pool!
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:54.320 * <search> Enabled role change notification
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:54.321 * <search> Cluster configuration: 0 partitions, type: 0, coordinator timeout: 0ms
+20220624-rscoord-702-redis-node-6-1   | Creating thread...
+20220624-rscoord-702-redis-node-6-1   | Thread created
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:54.322 * <search> Register write commands
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:54.322 * Module 'search' loaded from /usr/lib/redis/module-oss.so
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:54.335 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:54.340 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:54.340 * Ready to accept connections
+20220624-rscoord-702-redis-node-2-1   | 1:C 24 Jun 2022 17:22:54.392 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+20220624-rscoord-702-redis-node-2-1   | 1:C 24 Jun 2022 17:22:54.392 # Redis version=7.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+20220624-rscoord-702-redis-node-2-1   | 1:C 24 Jun 2022 17:22:54.392 # Configuration loaded
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:54.392 * monotonic clock: POSIX clock_gettime
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:54.393 * No cluster configuration found, I'm 0f2b610a6bcfe366fdfa302dbc7ef7f550bfcfbb
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:54.395 * Running mode=cluster, port=6374.
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:54.395 # Server initialized
+20220624-rscoord-702-redis-node-2-1   | RSValue size: 16
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:54.396 * <search> redis version observed by redisearch : 7.0.2
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:54.397 * <search> Redis version found by RedisSearch : 7.0.2 - oss
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:54.397 * <search> RediSearch version 99.99.99 (Git=master-75cf8b4c)
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:54.397 * <search> Low level api version 1 initialized successfully
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:54.397 * <search> concurrent writes: OFF, gc: ON, prefix min length: 2, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, search pool size: 20, index pool size: 8,
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:54.397 * <search> Initialized thread pool!
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:54.397 * <search> Enabled role change notification
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:54.397 * <search> Cluster configuration: 0 partitions, type: 0, coordinator timeout: 0ms
+20220624-rscoord-702-redis-node-2-1   | Creating thread...
+20220624-rscoord-702-redis-node-2-1   | Thread created
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:54.398 * <search> Register write commands
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:54.398 * Module 'search' loaded from /usr/lib/redis/module-oss.so
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:54.400 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:54.401 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:54.401 * Ready to accept connections
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:54.748 # <search> Got no slots in CLUSTER SLOTS
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:55.023 # <search> Got no slots in CLUSTER SLOTS
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:55.192 # <search> Got no slots in CLUSTER SLOTS
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:55.227 # <search> Got no slots in CLUSTER SLOTS
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:55.321 # <search> Got no slots in CLUSTER SLOTS
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:55.398 # <search> Got no slots in CLUSTER SLOTS
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:55.754 # <search> Got no slots in CLUSTER SLOTS
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:56.024 # <search> Got no slots in CLUSTER SLOTS
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:56.193 # <search> Got no slots in CLUSTER SLOTS
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:56.232 # <search> Got no slots in CLUSTER SLOTS
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:56.341 # <search> Got no slots in CLUSTER SLOTS
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:56.398 # <search> Got no slots in CLUSTER SLOTS
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:56.755 # <search> Got no slots in CLUSTER SLOTS
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:57.026 # <search> Got no slots in CLUSTER SLOTS
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:57.193 # <search> Got no slots in CLUSTER SLOTS
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:57.233 # <search> Got no slots in CLUSTER SLOTS
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:57.342 # <search> Got no slots in CLUSTER SLOTS
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:57.399 # <search> Got no slots in CLUSTER SLOTS
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:57.759 # <search> Got no slots in CLUSTER SLOTS
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:57.834 # configEpoch set to 1 via CLUSTER SET-CONFIG-EPOCH
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:57.835 # configEpoch set to 2 via CLUSTER SET-CONFIG-EPOCH
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:57.835 # configEpoch set to 3 via CLUSTER SET-CONFIG-EPOCH
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:57.835 # configEpoch set to 4 via CLUSTER SET-CONFIG-EPOCH
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:57.836 # configEpoch set to 5 via CLUSTER SET-CONFIG-EPOCH
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:57.836 # configEpoch set to 6 via CLUSTER SET-CONFIG-EPOCH
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:22:57.873 # IP address for this node updated to 172.29.0.31
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:22:57.890 # IP address for this node updated to 172.29.0.32
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:57.890 # IP address for this node updated to 172.29.0.36
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:22:57.890 # IP address for this node updated to 172.29.0.33
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:57.991 # IP address for this node updated to 172.29.0.35
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:57.992 # IP address for this node updated to 172.29.0.34
+20220624-rscoord-702-redis-node-1-1   | [0x7fbb00000b80 172.29.0.31:6373 Connecting]Switching state to Connected
+20220624-rscoord-702-redis-node-3-1   | [0x7f7610000b80 172.29.0.31:6373 Connecting]Switching state to Connected
+20220624-rscoord-702-redis-node-3-1   | [0x7f7610000c70 172.29.0.33:6375 Connecting]Switching state to Connected
+20220624-rscoord-702-redis-node-5-1   | [0x7f0dd0000b80 172.29.0.31:6373 Connecting]Switching state to Connected
+20220624-rscoord-702-redis-node-5-1   | [0x7f0dd0000c70 172.29.0.33:6375 Connecting]Switching state to Connected
+20220624-rscoord-702-redis-node-6-1   | [0x7fe89c000b80 172.29.0.31:6373 Connecting]Switching state to Connected
+20220624-rscoord-702-redis-node-2-1   | [0x7f0254000b80 172.29.0.31:6373 Connecting]Switching state to Connected
+20220624-rscoord-702-redis-node-2-1   | [0x7f0254000c70 172.29.0.32:6374 Connecting]Switching state to Connected
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | === REDIS BUG REPORT START: Cut & paste starting from here ===
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.760 # Redis 7.0.2 crashed by signal: 11, si_code: 1
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.760 # Accessing address: (nil)
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.760 # Crashed running the instruction at: 0x7f768e45b87b
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | ------ STACK TRACE ------
+20220624-rscoord-702-redis-node-4-1   | EIP:
+20220624-rscoord-702-redis-node-4-1   | /usr/lib/redis/module-oss.so(+0x14c87b)[0x7f768e45b87b]
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | Backtrace:
+20220624-rscoord-702-redis-node-4-1   | /lib/x86_64-linux-gnu/libpthread.so.0(+0x14140)[0x7f768f1fc140]
+20220624-rscoord-702-redis-node-4-1   | /usr/lib/redis/module-oss.so(+0x14c87b)[0x7f768e45b87b]
+20220624-rscoord-702-redis-node-4-1   | /usr/lib/redis/module-oss.so(+0x158407)[0x7f768e467407]
+20220624-rscoord-702-redis-node-4-1   | /usr/lib/redis/module-oss.so(+0x158eba)[0x7f768e467eba]
+20220624-rscoord-702-redis-node-4-1   | /usr/lib/redis/module-oss.so(+0x222645)[0x7f768e531645]
+20220624-rscoord-702-redis-node-4-1   | /usr/lib/redis/module-oss.so(+0x230085)[0x7f768e53f085]
+20220624-rscoord-702-redis-node-4-1   | /usr/lib/redis/module-oss.so(uv_run+0x104)[0x7f768e531eb4]
+20220624-rscoord-702-redis-node-4-1   | /usr/lib/redis/module-oss.so(+0x15804e)[0x7f768e46704e]
+20220624-rscoord-702-redis-node-4-1   | /lib/x86_64-linux-gnu/libpthread.so.0(+0x8ea7)[0x7f768f1f0ea7]
+20220624-rscoord-702-redis-node-4-1   | /lib/x86_64-linux-gnu/libc.so.6(clone+0x3f)[0x7f768f120def]
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | ------ REGISTERS ------
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.761 #
+20220624-rscoord-702-redis-node-4-1   | RAX:0000000000001554 RBX:0000000000000000
+20220624-rscoord-702-redis-node-4-1   | RCX:0000000000004000 RDX:0000000000001554
+20220624-rscoord-702-redis-node-4-1   | RDI:00007f768e7f8ad0 RSI:0000000000000001
+20220624-rscoord-702-redis-node-4-1   | RBP:0000000000000000 RSP:00007f768c886060
+20220624-rscoord-702-redis-node-4-1   | R8 :00007f768ee00900 R9 :0000000000000040
+20220624-rscoord-702-redis-node-4-1   | R10:0000000000000200 R11:00007f768c88b700
+20220624-rscoord-702-redis-node-4-1   | R12:00007f768e7f8ad0 R13:00007f768e7fba70
+20220624-rscoord-702-redis-node-4-1   | R14:000055dff00a2d30 R15:00007f768e7fb8c0
+20220624-rscoord-702-redis-node-4-1   | RIP:00007f768e45b87b EFL:0000000000010202
+20220624-rscoord-702-redis-node-4-1   | CSGSFS:002b000000000033
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.761 # (00007f768c88606f) -> 0000000000000000
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.761 # (00007f768c88606e) -> 0000000000000000
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.761 # (00007f768c88606d) -> 0000000000000000
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.761 # (00007f768c88606c) -> 0000000000000001
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.761 # (00007f768c88606b) -> 00007f768c8860b0
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.761 # (00007f768c88606a) -> 00007f768c8860b0
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.761 # (00007f768c886069) -> 00007f768e531645
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.761 # (00007f768c886068) -> 00007f768c8860b0
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.761 # (00007f768c886067) -> 0000000000000000
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.761 # (00007f768c886066) -> 000055dff00a2d40
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.761 # (00007f768c886065) -> 00007f768e467eba
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.761 # (00007f768c886064) -> 00007f7670000f70
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.761 # (00007f768c886063) -> 00007f768e467407
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.761 # (00007f768c886062) -> 000055dff00a2ca0
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.761 # (00007f768c886061) -> 00007f7670000f40
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.761 # (00007f768c886060) -> 000055dff00a2c80
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | ------ INFO OUTPUT ------
+20220624-rscoord-702-redis-node-4-1   | # Server
+20220624-rscoord-702-redis-node-4-1   | redis_version:7.0.2
+20220624-rscoord-702-redis-node-4-1   | redis_git_sha1:00000000
+20220624-rscoord-702-redis-node-4-1   | redis_git_dirty:0
+20220624-rscoord-702-redis-node-4-1   | redis_build_id:40f017f9608e455e
+20220624-rscoord-702-redis-node-4-1   | redis_mode:cluster
+20220624-rscoord-702-redis-node-4-1   | os:Linux 5.10.0-15-amd64 x86_64
+20220624-rscoord-702-redis-node-4-1   | arch_bits:64
+20220624-rscoord-702-redis-node-4-1   | monotonic_clock:POSIX clock_gettime
+20220624-rscoord-702-redis-node-4-1   | multiplexing_api:epoll
+20220624-rscoord-702-redis-node-4-1   | atomicvar_api:c11-builtin
+20220624-rscoord-702-redis-node-4-1   | gcc_version:10.2.1
+20220624-rscoord-702-redis-node-4-1   | process_id:1
+20220624-rscoord-702-redis-node-4-1   | process_supervised:no
+20220624-rscoord-702-redis-node-4-1   | run_id:2f2bfdfb807ac78332532ca5c76a9dcbf129c69f
+20220624-rscoord-702-redis-node-4-1   | tcp_port:6376
+20220624-rscoord-702-redis-node-4-1   | server_time_usec:1656091378760395
+20220624-rscoord-702-redis-node-4-1   | uptime_in_seconds:5
+20220624-rscoord-702-redis-node-4-1   | uptime_in_days:0
+20220624-rscoord-702-redis-node-4-1   | hz:10
+20220624-rscoord-702-redis-node-4-1   | configured_hz:10
+20220624-rscoord-702-redis-node-4-1   | lru_clock:11924210
+20220624-rscoord-702-redis-node-4-1   | executable:/usr/src/RediSearch/redis-server
+20220624-rscoord-702-redis-node-4-1   | config_file:/usr/local/etc/redis/redis.conf
+20220624-rscoord-702-redis-node-4-1   | io_threads_active:0
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | # Clients
+20220624-rscoord-702-redis-node-4-1   | connected_clients:1
+20220624-rscoord-702-redis-node-4-1   | cluster_connections:10
+20220624-rscoord-702-redis-node-4-1   | maxclients:10000
+20220624-rscoord-702-redis-node-4-1   | client_recent_max_input_buffer:20480
+20220624-rscoord-702-redis-node-4-1   | client_recent_max_output_buffer:0
+20220624-rscoord-702-redis-node-4-1   | blocked_clients:0
+20220624-rscoord-702-redis-node-4-1   | tracking_clients:0
+20220624-rscoord-702-redis-node-4-1   | clients_in_timeout_table:0
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | # Memory
+20220624-rscoord-702-redis-node-4-1   | used_memory:2031960
+20220624-rscoord-702-redis-node-4-1   | used_memory_human:1.94M
+20220624-rscoord-702-redis-node-4-1   | used_memory_rss:18280448
+20220624-rscoord-702-redis-node-4-1   | used_memory_rss_human:17.43M
+20220624-rscoord-702-redis-node-4-1   | used_memory_peak:2043640
+20220624-rscoord-702-redis-node-4-1   | used_memory_peak_human:1.95M
+20220624-rscoord-702-redis-node-4-1   | used_memory_peak_perc:99.43%
+20220624-rscoord-702-redis-node-4-1   | used_memory_overhead:1805792
+20220624-rscoord-702-redis-node-4-1   | used_memory_startup:1773536
+20220624-rscoord-702-redis-node-4-1   | used_memory_dataset:226168
+20220624-rscoord-702-redis-node-4-1   | used_memory_dataset_perc:87.52%
+20220624-rscoord-702-redis-node-4-1   | allocator_allocated:2796424
+20220624-rscoord-702-redis-node-4-1   | allocator_active:3203072
+20220624-rscoord-702-redis-node-4-1   | allocator_resident:8491008
+20220624-rscoord-702-redis-node-4-1   | total_system_memory:12558188544
+20220624-rscoord-702-redis-node-4-1   | total_system_memory_human:11.70G
+20220624-rscoord-702-redis-node-4-1   | used_memory_lua:31744
+20220624-rscoord-702-redis-node-4-1   | used_memory_vm_eval:31744
+20220624-rscoord-702-redis-node-4-1   | used_memory_lua_human:31.00K
+20220624-rscoord-702-redis-node-4-1   | used_memory_scripts_eval:0
+20220624-rscoord-702-redis-node-4-1   | number_of_cached_scripts:0
+20220624-rscoord-702-redis-node-4-1   | number_of_functions:0
+20220624-rscoord-702-redis-node-4-1   | number_of_libraries:0
+20220624-rscoord-702-redis-node-4-1   | used_memory_vm_functions:32768
+20220624-rscoord-702-redis-node-4-1   | used_memory_vm_total:64512
+20220624-rscoord-702-redis-node-4-1   | used_memory_vm_total_human:63.00K
+20220624-rscoord-702-redis-node-4-1   | used_memory_functions:184
+20220624-rscoord-702-redis-node-4-1   | used_memory_scripts:184
+20220624-rscoord-702-redis-node-4-1   | used_memory_scripts_human:184B
+20220624-rscoord-702-redis-node-4-1   | maxmemory:0
+20220624-rscoord-702-redis-node-4-1   | maxmemory_human:0B
+20220624-rscoord-702-redis-node-4-1   | maxmemory_policy:noeviction
+20220624-rscoord-702-redis-node-4-1   | allocator_frag_ratio:1.15
+20220624-rscoord-702-redis-node-4-1   | allocator_frag_bytes:406648
+20220624-rscoord-702-redis-node-4-1   | allocator_rss_ratio:2.65
+20220624-rscoord-702-redis-node-4-1   | allocator_rss_bytes:5287936
+20220624-rscoord-702-redis-node-4-1   | rss_overhead_ratio:2.15
+20220624-rscoord-702-redis-node-4-1   | rss_overhead_bytes:9789440
+20220624-rscoord-702-redis-node-4-1   | mem_fragmentation_ratio:9.00
+20220624-rscoord-702-redis-node-4-1   | mem_fragmentation_bytes:16249336
+20220624-rscoord-702-redis-node-4-1   | mem_not_counted_for_evict:8
+20220624-rscoord-702-redis-node-4-1   | mem_replication_backlog:0
+20220624-rscoord-702-redis-node-4-1   | mem_total_replication_buffers:0
+20220624-rscoord-702-redis-node-4-1   | mem_clients_slaves:0
+20220624-rscoord-702-redis-node-4-1   | mem_clients_normal:22272
+20220624-rscoord-702-redis-node-4-1   | mem_cluster_links:9792
+20220624-rscoord-702-redis-node-4-1   | mem_aof_buffer:8
+20220624-rscoord-702-redis-node-4-1   | mem_allocator:jemalloc-5.2.1
+20220624-rscoord-702-redis-node-4-1   | active_defrag_running:0
+20220624-rscoord-702-redis-node-4-1   | lazyfree_pending_objects:0
+20220624-rscoord-702-redis-node-4-1   | lazyfreed_objects:0
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | # Persistence
+20220624-rscoord-702-redis-node-4-1   | loading:0
+20220624-rscoord-702-redis-node-4-1   | async_loading:0
+20220624-rscoord-702-redis-node-4-1   | current_cow_peak:0
+20220624-rscoord-702-redis-node-4-1   | current_cow_size:0
+20220624-rscoord-702-redis-node-4-1   | current_cow_size_age:0
+20220624-rscoord-702-redis-node-4-1   | current_fork_perc:0.00
+20220624-rscoord-702-redis-node-4-1   | current_save_keys_processed:0
+20220624-rscoord-702-redis-node-4-1   | current_save_keys_total:0
+20220624-rscoord-702-redis-node-4-1   | rdb_changes_since_last_save:0
+20220624-rscoord-702-redis-node-4-1   | rdb_bgsave_in_progress:0
+20220624-rscoord-702-redis-node-4-1   | rdb_last_save_time:1656091373
+20220624-rscoord-702-redis-node-4-1   | rdb_last_bgsave_status:ok
+20220624-rscoord-702-redis-node-4-1   | rdb_last_bgsave_time_sec:-1
+20220624-rscoord-702-redis-node-4-1   | rdb_current_bgsave_time_sec:-1
+20220624-rscoord-702-redis-node-4-1   | rdb_saves:0
+20220624-rscoord-702-redis-node-4-1   | rdb_last_cow_size:0
+20220624-rscoord-702-redis-node-4-1   | rdb_last_load_keys_expired:0
+20220624-rscoord-702-redis-node-4-1   | rdb_last_load_keys_loaded:0
+20220624-rscoord-702-redis-node-4-1   | aof_enabled:1
+20220624-rscoord-702-redis-node-4-1   | aof_rewrite_in_progress:0
+20220624-rscoord-702-redis-node-4-1   | aof_rewrite_scheduled:0
+20220624-rscoord-702-redis-node-4-1   | aof_last_rewrite_time_sec:-1
+20220624-rscoord-702-redis-node-4-1   | aof_current_rewrite_time_sec:-1
+20220624-rscoord-702-redis-node-4-1   | aof_last_bgrewrite_status:ok
+20220624-rscoord-702-redis-node-4-1   | aof_rewrites:0
+20220624-rscoord-702-redis-node-4-1   | aof_rewrites_consecutive_failures:0
+20220624-rscoord-702-redis-node-4-1   | aof_last_write_status:ok
+20220624-rscoord-702-redis-node-4-1   | aof_last_cow_size:0
+20220624-rscoord-702-redis-node-4-1   | module_fork_in_progress:0
+20220624-rscoord-702-redis-node-4-1   | module_fork_last_cow_size:0
+20220624-rscoord-702-redis-node-4-1   | aof_current_size:0
+20220624-rscoord-702-redis-node-4-1   | aof_base_size:0
+20220624-rscoord-702-redis-node-4-1   | aof_pending_rewrite:0
+20220624-rscoord-702-redis-node-4-1   | aof_buffer_length:0
+20220624-rscoord-702-redis-node-4-1   | aof_pending_bio_fsync:0
+20220624-rscoord-702-redis-node-4-1   | aof_delayed_fsync:0
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | # Stats
+20220624-rscoord-702-redis-node-4-1   | total_connections_received:2
+20220624-rscoord-702-redis-node-4-1   | total_commands_processed:26
+20220624-rscoord-702-redis-node-4-1   | instantaneous_ops_per_sec:6
+20220624-rscoord-702-redis-node-4-1   | total_net_input_bytes:288
+20220624-rscoord-702-redis-node-4-1   | total_net_output_bytes:10789
+20220624-rscoord-702-redis-node-4-1   | total_net_repl_input_bytes:0
+20220624-rscoord-702-redis-node-4-1   | total_net_repl_output_bytes:0
+20220624-rscoord-702-redis-node-4-1   | instantaneous_input_kbps:0.16
+20220624-rscoord-702-redis-node-4-1   | instantaneous_output_kbps:6.50
+20220624-rscoord-702-redis-node-4-1   | instantaneous_input_repl_kbps:0.00
+20220624-rscoord-702-redis-node-4-1   | instantaneous_output_repl_kbps:0.00
+20220624-rscoord-702-redis-node-4-1   | rejected_connections:0
+20220624-rscoord-702-redis-node-4-1   | sync_full:0
+20220624-rscoord-702-redis-node-4-1   | sync_partial_ok:0
+20220624-rscoord-702-redis-node-4-1   | sync_partial_err:0
+20220624-rscoord-702-redis-node-4-1   | expired_keys:0
+20220624-rscoord-702-redis-node-4-1   | expired_stale_perc:0.00
+20220624-rscoord-702-redis-node-4-1   | expired_time_cap_reached_count:0
+20220624-rscoord-702-redis-node-4-1   | expire_cycle_cpu_milliseconds:0
+20220624-rscoord-702-redis-node-4-1   | evicted_keys:0
+20220624-rscoord-702-redis-node-4-1   | evicted_clients:0
+20220624-rscoord-702-redis-node-4-1   | total_eviction_exceeded_time:0
+20220624-rscoord-702-redis-node-4-1   | current_eviction_exceeded_time:0
+20220624-rscoord-702-redis-node-4-1   | keyspace_hits:0
+20220624-rscoord-702-redis-node-4-1   | keyspace_misses:0
+20220624-rscoord-702-redis-node-4-1   | pubsub_channels:0
+20220624-rscoord-702-redis-node-4-1   | pubsub_patterns:0
+20220624-rscoord-702-redis-node-4-1   | latest_fork_usec:0
+20220624-rscoord-702-redis-node-4-1   | total_forks:0
+20220624-rscoord-702-redis-node-4-1   | migrate_cached_sockets:0
+20220624-rscoord-702-redis-node-4-1   | slave_expires_tracked_keys:0
+20220624-rscoord-702-redis-node-4-1   | active_defrag_hits:0
+20220624-rscoord-702-redis-node-4-1   | active_defrag_misses:0
+20220624-rscoord-702-redis-node-4-1   | active_defrag_key_hits:0
+20220624-rscoord-702-redis-node-4-1   | active_defrag_key_misses:0
+20220624-rscoord-702-redis-node-4-1   | total_active_defrag_time:0
+20220624-rscoord-702-redis-node-4-1   | current_active_defrag_time:0
+20220624-rscoord-702-redis-node-4-1   | tracking_total_keys:0
+20220624-rscoord-702-redis-node-4-1   | tracking_total_items:0
+20220624-rscoord-702-redis-node-4-1   | tracking_total_prefixes:0
+20220624-rscoord-702-redis-node-4-1   | unexpected_error_replies:0
+20220624-rscoord-702-redis-node-4-1   | total_error_replies:2
+20220624-rscoord-702-redis-node-4-1   | dump_payload_sanitizations:0
+20220624-rscoord-702-redis-node-4-1   | total_reads_processed:9
+20220624-rscoord-702-redis-node-4-1   | total_writes_processed:8
+20220624-rscoord-702-redis-node-4-1   | io_threaded_reads_processed:0
+20220624-rscoord-702-redis-node-4-1   | io_threaded_writes_processed:0
+20220624-rscoord-702-redis-node-4-1   | reply_buffer_shrinks:1
+20220624-rscoord-702-redis-node-4-1   | reply_buffer_expands:0
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | # Replication
+20220624-rscoord-702-redis-node-4-1   | role:master
+20220624-rscoord-702-redis-node-4-1   | connected_slaves:0
+20220624-rscoord-702-redis-node-4-1   | master_failover_state:no-failover
+20220624-rscoord-702-redis-node-4-1   | master_replid:817e395404ed44221b3a63f7db647dc0fee7c4a9
+20220624-rscoord-702-redis-node-4-1   | master_replid2:0000000000000000000000000000000000000000
+20220624-rscoord-702-redis-node-4-1   | master_repl_offset:0
+20220624-rscoord-702-redis-node-4-1   | second_repl_offset:-1
+20220624-rscoord-702-redis-node-4-1   | repl_backlog_active:0
+20220624-rscoord-702-redis-node-4-1   | repl_backlog_size:1048576
+20220624-rscoord-702-redis-node-4-1   | repl_backlog_first_byte_offset:0
+20220624-rscoord-702-redis-node-4-1   | repl_backlog_histlen:0
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | # CPU
+20220624-rscoord-702-redis-node-4-1   | used_cpu_sys:0.029025
+20220624-rscoord-702-redis-node-4-1   | used_cpu_user:0.043538
+20220624-rscoord-702-redis-node-4-1   | used_cpu_sys_children:0.625903
+20220624-rscoord-702-redis-node-4-1   | used_cpu_user_children:0.048800
+20220624-rscoord-702-redis-node-4-1   | used_cpu_sys_main_thread:0.000000
+20220624-rscoord-702-redis-node-4-1   | used_cpu_user_main_thread:0.001414
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | # Modules
+20220624-rscoord-702-redis-node-4-1   | module:name=search,ver=999999,api=1,filters=0,usedby=[],using=[],options=[]
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | # Commandstats
+20220624-rscoord-702-redis-node-4-1   | cmdstat_info:calls=5,usec=168,usec_per_call=33.60,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-4-1   | cmdstat_incr:calls=0,usec=0,usec_per_call=0.00,rejected_calls=1,failed_calls=0
+20220624-rscoord-702-redis-node-4-1   | cmdstat_config|get:calls=1,usec=3,usec_per_call=3.00,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-4-1   | cmdstat_search.CLUSTERREFRESH:calls=5,usec=807,usec_per_call=161.40,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-4-1   | cmdstat_cluster|meet:calls=1,usec=8,usec_per_call=8.00,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-4-1   | cmdstat_cluster|slots:calls=5,usec=152,usec_per_call=30.40,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-4-1   | cmdstat_cluster|replicate:calls=1,usec=5,usec_per_call=5.00,rejected_calls=0,failed_calls=1
+20220624-rscoord-702-redis-node-4-1   | cmdstat_cluster|info:calls=1,usec=13,usec_per_call=13.00,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-4-1   | cmdstat_cluster|set-config-epoch:calls=1,usec=14,usec_per_call=14.00,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-4-1   | cmdstat_cluster|myid:calls=5,usec=14,usec_per_call=2.80,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-4-1   | cmdstat_cluster|nodes:calls=1,usec=40,usec_per_call=40.00,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | # Errorstats
+20220624-rscoord-702-redis-node-4-1   | errorstat_CLUSTERDOWN:count=1
+20220624-rscoord-702-redis-node-4-1   | errorstat_ERR:count=1
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | # Latencystats
+20220624-rscoord-702-redis-node-4-1   | latency_percentiles_usec_info:p50=30.079,p99=61.183,p99.9=61.183
+20220624-rscoord-702-redis-node-4-1   | latency_percentiles_usec_config|get:p50=3.007,p99=3.007,p99.9=3.007
+20220624-rscoord-702-redis-node-4-1   | latency_percentiles_usec_search.CLUSTERREFRESH:p50=78.335,p99=376.831,p99.9=376.831
+20220624-rscoord-702-redis-node-4-1   | latency_percentiles_usec_cluster|meet:p50=8.031,p99=8.031,p99.9=8.031
+20220624-rscoord-702-redis-node-4-1   | latency_percentiles_usec_cluster|slots:p50=32.127,p99=46.079,p99.9=46.079
+20220624-rscoord-702-redis-node-4-1   | latency_percentiles_usec_cluster|replicate:p50=5.023,p99=5.023,p99.9=5.023
+20220624-rscoord-702-redis-node-4-1   | latency_percentiles_usec_cluster|info:p50=13.055,p99=13.055,p99.9=13.055
+20220624-rscoord-702-redis-node-4-1   | latency_percentiles_usec_cluster|set-config-epoch:p50=14.015,p99=14.015,p99.9=14.015
+20220624-rscoord-702-redis-node-4-1   | latency_percentiles_usec_cluster|myid:p50=2.007,p99=4.015,p99.9=4.015
+20220624-rscoord-702-redis-node-4-1   | latency_percentiles_usec_cluster|nodes:p50=40.191,p99=40.191,p99.9=40.191
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | # Cluster
+20220624-rscoord-702-redis-node-4-1   | cluster_enabled:1
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | # Keyspace
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | ------ CLIENT LIST OUTPUT ------
+20220624-rscoord-702-redis-node-4-1   | id=12 addr=172.29.0.30:52858 laddr=172.29.0.34:6376 fd=18 name= age=1 idle=1 flags=N db=0 sub=0 psub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=60 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=cluster|meet user=default redir=-1 resp=2
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | ------ MODULES INFO OUTPUT ------
+20220624-rscoord-702-redis-node-4-1   | # search_version
+20220624-rscoord-702-redis-node-4-1   | search_RedisSearch_version:7.0.2
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | # search_index
+20220624-rscoord-702-redis-node-4-1   | search_number_of_indexes:0
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | # search_fields_statistics
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | # search_runtime_configurations
+20220624-rscoord-702-redis-node-4-1   | search_concurrent_mode:OFF
+20220624-rscoord-702-redis-node-4-1   | search_enableGC:ON
+20220624-rscoord-702-redis-node-4-1   | search_minimal_term_prefix:2
+20220624-rscoord-702-redis-node-4-1   | search_maximal_prefix_expansions:200
+20220624-rscoord-702-redis-node-4-1   | search_query_timeout_ms:500
+20220624-rscoord-702-redis-node-4-1   | search_timeout_policy:return
+20220624-rscoord-702-redis-node-4-1   | search_cursor_read_size:1000
+20220624-rscoord-702-redis-node-4-1   | search_cursor_max_idle_time:300000
+20220624-rscoord-702-redis-node-4-1   | search_max_doc_table_size:1000000
+20220624-rscoord-702-redis-node-4-1   | search_max_search_results:1000000
+20220624-rscoord-702-redis-node-4-1   | search_max_aggregate_results:-1
+20220624-rscoord-702-redis-node-4-1   | search_search_pool_size:20
+20220624-rscoord-702-redis-node-4-1   | search_index_pool_size:8
+20220624-rscoord-702-redis-node-4-1   | search_gc_scan_size:100
+20220624-rscoord-702-redis-node-4-1   | search_min_phonetic_term_length:3
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | ------ CONFIG DEBUG OUTPUT ------
+20220624-rscoord-702-redis-node-4-1   | lazyfree-lazy-user-del no
+20220624-rscoord-702-redis-node-4-1   | lazyfree-lazy-server-del no
+20220624-rscoord-702-redis-node-4-1   | repl-diskless-sync yes
+20220624-rscoord-702-redis-node-4-1   | io-threads 1
+20220624-rscoord-702-redis-node-4-1   | repl-diskless-load disabled
+20220624-rscoord-702-redis-node-4-1   | proto-max-bulk-len 512mb
+20220624-rscoord-702-redis-node-4-1   | io-threads-do-reads no
+20220624-rscoord-702-redis-node-4-1   | list-compress-depth 0
+20220624-rscoord-702-redis-node-4-1   | replica-read-only yes
+20220624-rscoord-702-redis-node-4-1   | activedefrag no
+20220624-rscoord-702-redis-node-4-1   | lazyfree-lazy-eviction no
+20220624-rscoord-702-redis-node-4-1   | lazyfree-lazy-user-flush no
+20220624-rscoord-702-redis-node-4-1   | sanitize-dump-payload no
+20220624-rscoord-702-redis-node-4-1   | client-query-buffer-limit 1gb
+20220624-rscoord-702-redis-node-4-1   | slave-read-only yes
+20220624-rscoord-702-redis-node-4-1   | lazyfree-lazy-expire no
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | ------ FAST MEMORY TEST ------
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.762 # main thread terminated
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.762 # Bio thread for job type #0 terminated
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.762 # Bio thread for job type #1 terminated
+20220624-rscoord-702-redis-node-4-1   | 1:M 24 Jun 2022 17:22:58.762 # Bio thread for job type #2 terminated
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | Fast memory test PASSED, however your memory can still be broken. Please run a memory test for several hours if possible.
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | ------ DUMPING CODE AROUND EIP ------
+20220624-rscoord-702-redis-node-4-1   | Symbol: (null) (base: (nil))
+20220624-rscoord-702-redis-node-4-1   | Module: /usr/lib/redis/module-oss.so (base 0x7f768e30f000)
+20220624-rscoord-702-redis-node-4-1   | $ xxd -r -p /tmp/dump.hex /tmp/dump.bin
+20220624-rscoord-702-redis-node-4-1   | $ objdump --adjust-vma=(nil) -D -b binary -m i386:x86-64 /tmp/dump.bin
+20220624-rscoord-702-redis-node-4-1   | ------
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   | === REDIS BUG REPORT END. Make sure to include from START to END. ===
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   |        Please report the crash by opening an issue on github:
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   |            http://github.com/redis/redis/issues
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   |   If a Redis module was involved, please open in the module's repo instead.
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   |   Suspect RAM error? Use redis-server --test-memory to verify it.
+20220624-rscoord-702-redis-node-4-1   |
+20220624-rscoord-702-redis-node-4-1   |   Some other issues could be detected by redis-server --check-system
+20220624-rscoord-702-redis-cluster-1  | >>> Performing hash slots allocation on 6 nodes...
+20220624-rscoord-702-redis-cluster-1  | Master[0] -> Slots 0 - 5460
+20220624-rscoord-702-redis-cluster-1  | Master[1] -> Slots 5461 - 10922
+20220624-rscoord-702-redis-cluster-1  | Master[2] -> Slots 10923 - 16383
+20220624-rscoord-702-redis-cluster-1  | Adding replica 172.29.0.35:6377 to 172.29.0.31:6373
+20220624-rscoord-702-redis-cluster-1  | Adding replica 172.29.0.36:6378 to 172.29.0.32:6374
+20220624-rscoord-702-redis-cluster-1  | Adding replica 172.29.0.34:6376 to 172.29.0.33:6375
+20220624-rscoord-702-redis-cluster-1  | M: 55b4441e5a9c12a5585455b45652bb32d6233651 172.29.0.31:6373
+20220624-rscoord-702-redis-cluster-1  |    slots:[0-5460] (5461 slots) master
+20220624-rscoord-702-redis-cluster-1  | M: 0f2b610a6bcfe366fdfa302dbc7ef7f550bfcfbb 172.29.0.32:6374
+20220624-rscoord-702-redis-cluster-1  |    slots:[5461-10922] (5462 slots) master
+20220624-rscoord-702-redis-cluster-1  | M: a9160f773dfa624d2eabf9685e17da5cda3832b9 172.29.0.33:6375
+20220624-rscoord-702-redis-cluster-1  |    slots:[10923-16383] (5461 slots) master
+20220624-rscoord-702-redis-cluster-1  | S: 35736c45134473348843e39c3ce97180de46a450 172.29.0.34:6376
+20220624-rscoord-702-redis-cluster-1  |    replicates a9160f773dfa624d2eabf9685e17da5cda3832b9
+20220624-rscoord-702-redis-cluster-1  | S: 5f1d24948803d6376f0a5e1ecc4252c5317089d2 172.29.0.35:6377
+20220624-rscoord-702-redis-cluster-1  |    replicates 55b4441e5a9c12a5585455b45652bb32d6233651
+20220624-rscoord-702-redis-cluster-1  | S: a525016630f72e01bf4d7802079079df41523e0e 172.29.0.36:6378
+20220624-rscoord-702-redis-cluster-1  |    replicates 0f2b610a6bcfe366fdfa302dbc7ef7f550bfcfbb
+20220624-rscoord-702-redis-cluster-1  | >>> Nodes configuration updated
+20220624-rscoord-702-redis-cluster-1  | >>> Assign a different config epoch to each node
+20220624-rscoord-702-redis-cluster-1  | >>> Sending CLUSTER MEET messages to join the cluster
+20220624-rscoord-702-redis-cluster-1  | Waiting for the cluster to join
+20220624-rscoord-702-redis-node-1-1   | [0x7fbb00000d60 172.29.0.32:6374 Connecting]Switching state to Connected
+20220624-rscoord-702-redis-node-1-1   | [0x7fbb00000de0 172.29.0.33:6375 Connecting]Switching state to Connected
+20220624-rscoord-702-redis-node-4-1 exited with code 139
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | === REDIS BUG REPORT START: Cut & paste starting from here ===
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.255 # Redis 7.0.2 crashed by signal: 11, si_code: 1
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.255 # Accessing address: (nil)
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.255 # Crashed running the instruction at: 0x7f0de865b87b
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | ------ STACK TRACE ------
+20220624-rscoord-702-redis-node-5-1   | EIP:
+20220624-rscoord-702-redis-node-5-1   | /usr/lib/redis/module-oss.so(+0x14c87b)[0x7f0de865b87b]
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | Backtrace:
+20220624-rscoord-702-redis-node-5-1   | /lib/x86_64-linux-gnu/libpthread.so.0(+0x14140)[0x7f0de9555140]
+20220624-rscoord-702-redis-node-5-1   | /usr/lib/redis/module-oss.so(+0x14c87b)[0x7f0de865b87b]
+20220624-rscoord-702-redis-node-5-1   | /usr/lib/redis/module-oss.so(+0x158407)[0x7f0de8667407]
+20220624-rscoord-702-redis-node-5-1   | /usr/lib/redis/module-oss.so(+0x158eba)[0x7f0de8667eba]
+20220624-rscoord-702-redis-node-5-1   | /usr/lib/redis/module-oss.so(+0x222645)[0x7f0de8731645]
+20220624-rscoord-702-redis-node-5-1   | /usr/lib/redis/module-oss.so(+0x230085)[0x7f0de873f085]
+20220624-rscoord-702-redis-node-5-1   | /usr/lib/redis/module-oss.so(uv_run+0x104)[0x7f0de8731eb4]
+20220624-rscoord-702-redis-node-5-1   | /usr/lib/redis/module-oss.so(+0x15804e)[0x7f0de866704e]
+20220624-rscoord-702-redis-node-5-1   | /lib/x86_64-linux-gnu/libpthread.so.0(+0x8ea7)[0x7f0de9549ea7]
+20220624-rscoord-702-redis-node-5-1   | /lib/x86_64-linux-gnu/libc.so.6(clone+0x3f)[0x7f0de9479def]
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | ------ REGISTERS ------
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.256 #
+20220624-rscoord-702-redis-node-5-1   | RAX:0000000000001554 RBX:0000000000000000
+20220624-rscoord-702-redis-node-5-1   | RCX:0000000000004000 RDX:0000000000001554
+20220624-rscoord-702-redis-node-5-1   | RDI:00007f0de89f8ad0 RSI:0000000000000001
+20220624-rscoord-702-redis-node-5-1   | RBP:0000000000000000 RSP:00007f0de6a86060
+20220624-rscoord-702-redis-node-5-1   | R8 :00007f0dcc000e10 R9 :0000000000000040
+20220624-rscoord-702-redis-node-5-1   | R10:0000000000000200 R11:00007f0de6a8b700
+20220624-rscoord-702-redis-node-5-1   | R12:00007f0de89f8ad0 R13:00007f0de89fba70
+20220624-rscoord-702-redis-node-5-1   | R14:00005558052d5d30 R15:00007f0de89fb8c0
+20220624-rscoord-702-redis-node-5-1   | RIP:00007f0de865b87b EFL:0000000000010202
+20220624-rscoord-702-redis-node-5-1   | CSGSFS:002b000000000033
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.256 # (00007f0de6a8606f) -> 00005558034bde1b
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.256 # (00007f0de6a8606e) -> 00007f0dd9021020
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.256 # (00007f0de6a8606d) -> 00007f0de6a86108
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.256 # (00007f0de6a8606c) -> 0000000000000001
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.256 # (00007f0de6a8606b) -> 00007f0de6a860b0
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.256 # (00007f0de6a8606a) -> 00007f0de6a860b0
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.256 # (00007f0de6a86069) -> 00007f0de8731645
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.256 # (00007f0de6a86068) -> 00007f0de6a860b0
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.256 # (00007f0de6a86067) -> 0000000000000000
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.256 # (00007f0de6a86066) -> 00005558052d5d40
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.256 # (00007f0de6a86065) -> 00007f0de8667eba
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.256 # (00007f0de6a86064) -> 00007f0dcc001130
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.256 # (00007f0de6a86063) -> 00007f0de8667407
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.256 # (00007f0de6a86062) -> 00005558052d5ca0
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.256 # (00007f0de6a86061) -> 00007f0dcc001100
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.256 # (00007f0de6a86060) -> 00005558052d5c80
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | ------ INFO OUTPUT ------
+20220624-rscoord-702-redis-node-5-1   | # Server
+20220624-rscoord-702-redis-node-5-1   | redis_version:7.0.2
+20220624-rscoord-702-redis-node-5-1   | redis_git_sha1:00000000
+20220624-rscoord-702-redis-node-5-1   | redis_git_dirty:0
+20220624-rscoord-702-redis-node-5-1   | redis_build_id:40f017f9608e455e
+20220624-rscoord-702-redis-node-5-1   | redis_mode:cluster
+20220624-rscoord-702-redis-node-5-1   | os:Linux 5.10.0-15-amd64 x86_64
+20220624-rscoord-702-redis-node-5-1   | arch_bits:64
+20220624-rscoord-702-redis-node-5-1   | monotonic_clock:POSIX clock_gettime
+20220624-rscoord-702-redis-node-5-1   | multiplexing_api:epoll
+20220624-rscoord-702-redis-node-5-1   | atomicvar_api:c11-builtin
+20220624-rscoord-702-redis-node-5-1   | gcc_version:10.2.1
+20220624-rscoord-702-redis-node-5-1   | process_id:1
+20220624-rscoord-702-redis-node-5-1   | process_supervised:no
+20220624-rscoord-702-redis-node-5-1   | run_id:1cec814767b3bfd7bc502bc4589494d1e40877cc
+20220624-rscoord-702-redis-node-5-1   | tcp_port:6377
+20220624-rscoord-702-redis-node-5-1   | server_time_usec:1656091379255559
+20220624-rscoord-702-redis-node-5-1   | uptime_in_seconds:5
+20220624-rscoord-702-redis-node-5-1   | uptime_in_days:0
+20220624-rscoord-702-redis-node-5-1   | hz:10
+20220624-rscoord-702-redis-node-5-1   | configured_hz:10
+20220624-rscoord-702-redis-node-5-1   | lru_clock:11924211
+20220624-rscoord-702-redis-node-5-1   | executable:/usr/src/RediSearch/redis-server
+20220624-rscoord-702-redis-node-5-1   | config_file:/usr/local/etc/redis/redis.conf
+20220624-rscoord-702-redis-node-5-1   | io_threads_active:0
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | # Clients
+20220624-rscoord-702-redis-node-5-1   | connected_clients:1
+20220624-rscoord-702-redis-node-5-1   | cluster_connections:10
+20220624-rscoord-702-redis-node-5-1   | maxclients:10000
+20220624-rscoord-702-redis-node-5-1   | client_recent_max_input_buffer:20480
+20220624-rscoord-702-redis-node-5-1   | client_recent_max_output_buffer:0
+20220624-rscoord-702-redis-node-5-1   | blocked_clients:0
+20220624-rscoord-702-redis-node-5-1   | tracking_clients:0
+20220624-rscoord-702-redis-node-5-1   | clients_in_timeout_table:0
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | # Memory
+20220624-rscoord-702-redis-node-5-1   | used_memory:2029776
+20220624-rscoord-702-redis-node-5-1   | used_memory_human:1.94M
+20220624-rscoord-702-redis-node-5-1   | used_memory_rss:18288640
+20220624-rscoord-702-redis-node-5-1   | used_memory_rss_human:17.44M
+20220624-rscoord-702-redis-node-5-1   | used_memory_peak:2044896
+20220624-rscoord-702-redis-node-5-1   | used_memory_peak_human:1.95M
+20220624-rscoord-702-redis-node-5-1   | used_memory_peak_perc:99.26%
+20220624-rscoord-702-redis-node-5-1   | used_memory_overhead:1805824
+20220624-rscoord-702-redis-node-5-1   | used_memory_startup:1773568
+20220624-rscoord-702-redis-node-5-1   | used_memory_dataset:223952
+20220624-rscoord-702-redis-node-5-1   | used_memory_dataset_perc:87.41%
+20220624-rscoord-702-redis-node-5-1   | allocator_allocated:3054504
+20220624-rscoord-702-redis-node-5-1   | allocator_active:3559424
+20220624-rscoord-702-redis-node-5-1   | allocator_resident:6795264
+20220624-rscoord-702-redis-node-5-1   | total_system_memory:12558188544
+20220624-rscoord-702-redis-node-5-1   | total_system_memory_human:11.70G
+20220624-rscoord-702-redis-node-5-1   | used_memory_lua:31744
+20220624-rscoord-702-redis-node-5-1   | used_memory_vm_eval:31744
+20220624-rscoord-702-redis-node-5-1   | used_memory_lua_human:31.00K
+20220624-rscoord-702-redis-node-5-1   | used_memory_scripts_eval:0
+20220624-rscoord-702-redis-node-5-1   | number_of_cached_scripts:0
+20220624-rscoord-702-redis-node-5-1   | number_of_functions:0
+20220624-rscoord-702-redis-node-5-1   | number_of_libraries:0
+20220624-rscoord-702-redis-node-5-1   | used_memory_vm_functions:32768
+20220624-rscoord-702-redis-node-5-1   | used_memory_vm_total:64512
+20220624-rscoord-702-redis-node-5-1   | used_memory_vm_total_human:63.00K
+20220624-rscoord-702-redis-node-5-1   | used_memory_functions:184
+20220624-rscoord-702-redis-node-5-1   | used_memory_scripts:184
+20220624-rscoord-702-redis-node-5-1   | used_memory_scripts_human:184B
+20220624-rscoord-702-redis-node-5-1   | maxmemory:0
+20220624-rscoord-702-redis-node-5-1   | maxmemory_human:0B
+20220624-rscoord-702-redis-node-5-1   | maxmemory_policy:noeviction
+20220624-rscoord-702-redis-node-5-1   | allocator_frag_ratio:1.17
+20220624-rscoord-702-redis-node-5-1   | allocator_frag_bytes:504920
+20220624-rscoord-702-redis-node-5-1   | allocator_rss_ratio:1.91
+20220624-rscoord-702-redis-node-5-1   | allocator_rss_bytes:3235840
+20220624-rscoord-702-redis-node-5-1   | rss_overhead_ratio:2.69
+20220624-rscoord-702-redis-node-5-1   | rss_overhead_bytes:11493376
+20220624-rscoord-702-redis-node-5-1   | mem_fragmentation_ratio:9.04
+20220624-rscoord-702-redis-node-5-1   | mem_fragmentation_bytes:16266496
+20220624-rscoord-702-redis-node-5-1   | mem_not_counted_for_evict:8
+20220624-rscoord-702-redis-node-5-1   | mem_replication_backlog:0
+20220624-rscoord-702-redis-node-5-1   | mem_total_replication_buffers:0
+20220624-rscoord-702-redis-node-5-1   | mem_clients_slaves:0
+20220624-rscoord-702-redis-node-5-1   | mem_clients_normal:22272
+20220624-rscoord-702-redis-node-5-1   | mem_cluster_links:9792
+20220624-rscoord-702-redis-node-5-1   | mem_aof_buffer:8
+20220624-rscoord-702-redis-node-5-1   | mem_allocator:jemalloc-5.2.1
+20220624-rscoord-702-redis-node-5-1   | active_defrag_running:0
+20220624-rscoord-702-redis-node-5-1   | lazyfree_pending_objects:0
+20220624-rscoord-702-redis-node-5-1   | lazyfreed_objects:0
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | # Persistence
+20220624-rscoord-702-redis-node-5-1   | loading:0
+20220624-rscoord-702-redis-node-5-1   | async_loading:0
+20220624-rscoord-702-redis-node-5-1   | current_cow_peak:0
+20220624-rscoord-702-redis-node-5-1   | current_cow_size:0
+20220624-rscoord-702-redis-node-5-1   | current_cow_size_age:0
+20220624-rscoord-702-redis-node-5-1   | current_fork_perc:0.00
+20220624-rscoord-702-redis-node-5-1   | current_save_keys_processed:0
+20220624-rscoord-702-redis-node-5-1   | current_save_keys_total:0
+20220624-rscoord-702-redis-node-5-1   | rdb_changes_since_last_save:0
+20220624-rscoord-702-redis-node-5-1   | rdb_bgsave_in_progress:0
+20220624-rscoord-702-redis-node-5-1   | rdb_last_save_time:1656091374
+20220624-rscoord-702-redis-node-5-1   | rdb_last_bgsave_status:ok
+20220624-rscoord-702-redis-node-5-1   | rdb_last_bgsave_time_sec:-1
+20220624-rscoord-702-redis-node-5-1   | rdb_current_bgsave_time_sec:-1
+20220624-rscoord-702-redis-node-5-1   | rdb_saves:0
+20220624-rscoord-702-redis-node-5-1   | rdb_last_cow_size:0
+20220624-rscoord-702-redis-node-5-1   | rdb_last_load_keys_expired:0
+20220624-rscoord-702-redis-node-5-1   | rdb_last_load_keys_loaded:0
+20220624-rscoord-702-redis-node-5-1   | aof_enabled:1
+20220624-rscoord-702-redis-node-5-1   | aof_rewrite_in_progress:0
+20220624-rscoord-702-redis-node-5-1   | aof_rewrite_scheduled:0
+20220624-rscoord-702-redis-node-5-1   | aof_last_rewrite_time_sec:-1
+20220624-rscoord-702-redis-node-5-1   | aof_current_rewrite_time_sec:-1
+20220624-rscoord-702-redis-node-5-1   | aof_last_bgrewrite_status:ok
+20220624-rscoord-702-redis-node-5-1   | aof_rewrites:0
+20220624-rscoord-702-redis-node-5-1   | aof_rewrites_consecutive_failures:0
+20220624-rscoord-702-redis-node-5-1   | aof_last_write_status:ok
+20220624-rscoord-702-redis-node-5-1   | aof_last_cow_size:0
+20220624-rscoord-702-redis-node-5-1   | module_fork_in_progress:0
+20220624-rscoord-702-redis-node-5-1   | module_fork_last_cow_size:0
+20220624-rscoord-702-redis-node-5-1   | aof_current_size:0
+20220624-rscoord-702-redis-node-5-1   | aof_base_size:0
+20220624-rscoord-702-redis-node-5-1   | aof_pending_rewrite:0
+20220624-rscoord-702-redis-node-5-1   | aof_buffer_length:0
+20220624-rscoord-702-redis-node-5-1   | aof_pending_bio_fsync:0
+20220624-rscoord-702-redis-node-5-1   | aof_delayed_fsync:0
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | # Stats
+20220624-rscoord-702-redis-node-5-1   | total_connections_received:2
+20220624-rscoord-702-redis-node-5-1   | total_commands_processed:30
+20220624-rscoord-702-redis-node-5-1   | instantaneous_ops_per_sec:8
+20220624-rscoord-702-redis-node-5-1   | total_net_input_bytes:288
+20220624-rscoord-702-redis-node-5-1   | total_net_output_bytes:10789
+20220624-rscoord-702-redis-node-5-1   | total_net_repl_input_bytes:0
+20220624-rscoord-702-redis-node-5-1   | total_net_repl_output_bytes:0
+20220624-rscoord-702-redis-node-5-1   | instantaneous_input_kbps:0.16
+20220624-rscoord-702-redis-node-5-1   | instantaneous_output_kbps:6.50
+20220624-rscoord-702-redis-node-5-1   | instantaneous_input_repl_kbps:0.00
+20220624-rscoord-702-redis-node-5-1   | instantaneous_output_repl_kbps:0.00
+20220624-rscoord-702-redis-node-5-1   | rejected_connections:0
+20220624-rscoord-702-redis-node-5-1   | sync_full:0
+20220624-rscoord-702-redis-node-5-1   | sync_partial_ok:0
+20220624-rscoord-702-redis-node-5-1   | sync_partial_err:0
+20220624-rscoord-702-redis-node-5-1   | expired_keys:0
+20220624-rscoord-702-redis-node-5-1   | expired_stale_perc:0.00
+20220624-rscoord-702-redis-node-5-1   | expired_time_cap_reached_count:0
+20220624-rscoord-702-redis-node-5-1   | expire_cycle_cpu_milliseconds:0
+20220624-rscoord-702-redis-node-5-1   | evicted_keys:0
+20220624-rscoord-702-redis-node-5-1   | evicted_clients:0
+20220624-rscoord-702-redis-node-5-1   | total_eviction_exceeded_time:0
+20220624-rscoord-702-redis-node-5-1   | current_eviction_exceeded_time:0
+20220624-rscoord-702-redis-node-5-1   | keyspace_hits:0
+20220624-rscoord-702-redis-node-5-1   | keyspace_misses:0
+20220624-rscoord-702-redis-node-5-1   | pubsub_channels:0
+20220624-rscoord-702-redis-node-5-1   | pubsub_patterns:0
+20220624-rscoord-702-redis-node-5-1   | latest_fork_usec:0
+20220624-rscoord-702-redis-node-5-1   | total_forks:0
+20220624-rscoord-702-redis-node-5-1   | migrate_cached_sockets:0
+20220624-rscoord-702-redis-node-5-1   | slave_expires_tracked_keys:0
+20220624-rscoord-702-redis-node-5-1   | active_defrag_hits:0
+20220624-rscoord-702-redis-node-5-1   | active_defrag_misses:0
+20220624-rscoord-702-redis-node-5-1   | active_defrag_key_hits:0
+20220624-rscoord-702-redis-node-5-1   | active_defrag_key_misses:0
+20220624-rscoord-702-redis-node-5-1   | total_active_defrag_time:0
+20220624-rscoord-702-redis-node-5-1   | current_active_defrag_time:0
+20220624-rscoord-702-redis-node-5-1   | tracking_total_keys:0
+20220624-rscoord-702-redis-node-5-1   | tracking_total_items:0
+20220624-rscoord-702-redis-node-5-1   | tracking_total_prefixes:0
+20220624-rscoord-702-redis-node-5-1   | unexpected_error_replies:0
+20220624-rscoord-702-redis-node-5-1   | total_error_replies:2
+20220624-rscoord-702-redis-node-5-1   | dump_payload_sanitizations:0
+20220624-rscoord-702-redis-node-5-1   | total_reads_processed:9
+20220624-rscoord-702-redis-node-5-1   | total_writes_processed:8
+20220624-rscoord-702-redis-node-5-1   | io_threaded_reads_processed:0
+20220624-rscoord-702-redis-node-5-1   | io_threaded_writes_processed:0
+20220624-rscoord-702-redis-node-5-1   | reply_buffer_shrinks:1
+20220624-rscoord-702-redis-node-5-1   | reply_buffer_expands:0
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | # Replication
+20220624-rscoord-702-redis-node-5-1   | role:master
+20220624-rscoord-702-redis-node-5-1   | connected_slaves:0
+20220624-rscoord-702-redis-node-5-1   | master_failover_state:no-failover
+20220624-rscoord-702-redis-node-5-1   | master_replid:ceaa6dd14348ebc41be5fe1c5450aa6f61d88297
+20220624-rscoord-702-redis-node-5-1   | master_replid2:0000000000000000000000000000000000000000
+20220624-rscoord-702-redis-node-5-1   | master_repl_offset:0
+20220624-rscoord-702-redis-node-5-1   | second_repl_offset:-1
+20220624-rscoord-702-redis-node-5-1   | repl_backlog_active:0
+20220624-rscoord-702-redis-node-5-1   | repl_backlog_size:1048576
+20220624-rscoord-702-redis-node-5-1   | repl_backlog_first_byte_offset:0
+20220624-rscoord-702-redis-node-5-1   | repl_backlog_histlen:0
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | # CPU
+20220624-rscoord-702-redis-node-5-1   | used_cpu_sys:0.032234
+20220624-rscoord-702-redis-node-5-1   | used_cpu_user:0.037346
+20220624-rscoord-702-redis-node-5-1   | used_cpu_sys_children:0.704704
+20220624-rscoord-702-redis-node-5-1   | used_cpu_user_children:0.023036
+20220624-rscoord-702-redis-node-5-1   | used_cpu_sys_main_thread:0.000000
+20220624-rscoord-702-redis-node-5-1   | used_cpu_user_main_thread:0.002325
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | # Modules
+20220624-rscoord-702-redis-node-5-1   | module:name=search,ver=999999,api=1,filters=0,usedby=[],using=[],options=[]
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | # Commandstats
+20220624-rscoord-702-redis-node-5-1   | cmdstat_config|get:calls=5,usec=25,usec_per_call=5.00,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-5-1   | cmdstat_info:calls=5,usec=166,usec_per_call=33.20,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-5-1   | cmdstat_search.CLUSTERREFRESH:calls=5,usec=4084,usec_per_call=816.80,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-5-1   | cmdstat_incr:calls=0,usec=0,usec_per_call=0.00,rejected_calls=1,failed_calls=0
+20220624-rscoord-702-redis-node-5-1   | cmdstat_cluster|info:calls=1,usec=13,usec_per_call=13.00,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-5-1   | cmdstat_cluster|set-config-epoch:calls=1,usec=14,usec_per_call=14.00,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-5-1   | cmdstat_cluster|nodes:calls=1,usec=37,usec_per_call=37.00,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-5-1   | cmdstat_cluster|replicate:calls=1,usec=5,usec_per_call=5.00,rejected_calls=0,failed_calls=1
+20220624-rscoord-702-redis-node-5-1   | cmdstat_cluster|meet:calls=1,usec=8,usec_per_call=8.00,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-5-1   | cmdstat_cluster|slots:calls=5,usec=181,usec_per_call=36.20,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-5-1   | cmdstat_cluster|myid:calls=5,usec=15,usec_per_call=3.00,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | # Errorstats
+20220624-rscoord-702-redis-node-5-1   | errorstat_CLUSTERDOWN:count=1
+20220624-rscoord-702-redis-node-5-1   | errorstat_ERR:count=1
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | # Latencystats
+20220624-rscoord-702-redis-node-5-1   | latency_percentiles_usec_config|get:p50=5.023,p99=8.031,p99.9=8.031
+20220624-rscoord-702-redis-node-5-1   | latency_percentiles_usec_info:p50=33.023,p99=58.111,p99.9=58.111
+20220624-rscoord-702-redis-node-5-1   | latency_percentiles_usec_search.CLUSTERREFRESH:p50=88.063,p99=3637.247,p99.9=3637.247
+20220624-rscoord-702-redis-node-5-1   | latency_percentiles_usec_cluster|info:p50=13.055,p99=13.055,p99.9=13.055
+20220624-rscoord-702-redis-node-5-1   | latency_percentiles_usec_cluster|set-config-epoch:p50=14.015,p99=14.015,p99.9=14.015
+20220624-rscoord-702-redis-node-5-1   | latency_percentiles_usec_cluster|nodes:p50=37.119,p99=37.119,p99.9=37.119
+20220624-rscoord-702-redis-node-5-1   | latency_percentiles_usec_cluster|replicate:p50=5.023,p99=5.023,p99.9=5.023
+20220624-rscoord-702-redis-node-5-1   | latency_percentiles_usec_cluster|meet:p50=8.031,p99=8.031,p99.9=8.031
+20220624-rscoord-702-redis-node-5-1   | latency_percentiles_usec_cluster|slots:p50=20.095,p99=96.255,p99.9=96.255
+20220624-rscoord-702-redis-node-5-1   | latency_percentiles_usec_cluster|myid:p50=2.007,p99=5.023,p99.9=5.023
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | # Cluster
+20220624-rscoord-702-redis-node-5-1   | cluster_enabled:1
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | # Keyspace
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | ------ CLIENT LIST OUTPUT ------
+20220624-rscoord-702-redis-node-5-1   | id=11 addr=172.29.0.30:35194 laddr=172.29.0.35:6377 fd=18 name= age=2 idle=2 flags=N db=0 sub=0 psub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=cluster|meet user=default redir=-1 resp=2
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | ------ MODULES INFO OUTPUT ------
+20220624-rscoord-702-redis-node-5-1   | # search_version
+20220624-rscoord-702-redis-node-5-1   | search_RedisSearch_version:7.0.2
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | # search_index
+20220624-rscoord-702-redis-node-5-1   | search_number_of_indexes:0
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | # search_fields_statistics
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | # search_runtime_configurations
+20220624-rscoord-702-redis-node-5-1   | search_concurrent_mode:OFF
+20220624-rscoord-702-redis-node-5-1   | search_enableGC:ON
+20220624-rscoord-702-redis-node-5-1   | search_minimal_term_prefix:2
+20220624-rscoord-702-redis-node-5-1   | search_maximal_prefix_expansions:200
+20220624-rscoord-702-redis-node-5-1   | search_query_timeout_ms:500
+20220624-rscoord-702-redis-node-5-1   | search_timeout_policy:return
+20220624-rscoord-702-redis-node-5-1   | search_cursor_read_size:1000
+20220624-rscoord-702-redis-node-5-1   | search_cursor_max_idle_time:300000
+20220624-rscoord-702-redis-node-5-1   | search_max_doc_table_size:1000000
+20220624-rscoord-702-redis-node-5-1   | search_max_search_results:1000000
+20220624-rscoord-702-redis-node-5-1   | search_max_aggregate_results:-1
+20220624-rscoord-702-redis-node-5-1   | search_search_pool_size:20
+20220624-rscoord-702-redis-node-5-1   | search_index_pool_size:8
+20220624-rscoord-702-redis-node-5-1   | search_gc_scan_size:100
+20220624-rscoord-702-redis-node-5-1   | search_min_phonetic_term_length:3
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | ------ CONFIG DEBUG OUTPUT ------
+20220624-rscoord-702-redis-node-5-1   | repl-diskless-load disabled
+20220624-rscoord-702-redis-node-5-1   | sanitize-dump-payload no
+20220624-rscoord-702-redis-node-5-1   | lazyfree-lazy-server-del no
+20220624-rscoord-702-redis-node-5-1   | lazyfree-lazy-user-flush no
+20220624-rscoord-702-redis-node-5-1   | lazyfree-lazy-eviction no
+20220624-rscoord-702-redis-node-5-1   | activedefrag no
+20220624-rscoord-702-redis-node-5-1   | lazyfree-lazy-user-del no
+20220624-rscoord-702-redis-node-5-1   | client-query-buffer-limit 1gb
+20220624-rscoord-702-redis-node-5-1   | proto-max-bulk-len 512mb
+20220624-rscoord-702-redis-node-5-1   | slave-read-only yes
+20220624-rscoord-702-redis-node-5-1   | repl-diskless-sync yes
+20220624-rscoord-702-redis-node-5-1   | list-compress-depth 0
+20220624-rscoord-702-redis-node-5-1   | replica-read-only yes
+20220624-rscoord-702-redis-node-5-1   | lazyfree-lazy-expire no
+20220624-rscoord-702-redis-node-5-1   | io-threads 1
+20220624-rscoord-702-redis-node-5-1   | io-threads-do-reads no
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | ------ FAST MEMORY TEST ------
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.257 # main thread terminated
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.257 # Bio thread for job type #0 terminated
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.257 # Bio thread for job type #1 terminated
+20220624-rscoord-702-redis-node-5-1   | 1:M 24 Jun 2022 17:22:59.257 # Bio thread for job type #2 terminated
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | Fast memory test PASSED, however your memory can still be broken. Please run a memory test for several hours if possible.
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | ------ DUMPING CODE AROUND EIP ------
+20220624-rscoord-702-redis-node-5-1   | Symbol: (null) (base: (nil))
+20220624-rscoord-702-redis-node-5-1   | Module: /usr/lib/redis/module-oss.so (base 0x7f0de850f000)
+20220624-rscoord-702-redis-node-5-1   | $ xxd -r -p /tmp/dump.hex /tmp/dump.bin
+20220624-rscoord-702-redis-node-5-1   | $ objdump --adjust-vma=(nil) -D -b binary -m i386:x86-64 /tmp/dump.bin
+20220624-rscoord-702-redis-node-5-1   | ------
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   | === REDIS BUG REPORT END. Make sure to include from START to END. ===
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   |        Please report the crash by opening an issue on github:
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   |            http://github.com/redis/redis/issues
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   |   If a Redis module was involved, please open in the module's repo instead.
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   |   Suspect RAM error? Use redis-server --test-memory to verify it.
+20220624-rscoord-702-redis-node-5-1   |
+20220624-rscoord-702-redis-node-5-1   |   Some other issues could be detected by redis-server --check-system
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | === REDIS BUG REPORT START: Cut & paste starting from here ===
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.344 # Redis 7.0.2 crashed by signal: 11, si_code: 1
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.344 # Accessing address: (nil)
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.344 # Crashed running the instruction at: 0x7fe8b705b87b
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | ------ STACK TRACE ------
+20220624-rscoord-702-redis-node-6-1   | EIP:
+20220624-rscoord-702-redis-node-6-1   | /usr/lib/redis/module-oss.so(+0x14c87b)[0x7fe8b705b87b]
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | Backtrace:
+20220624-rscoord-702-redis-node-6-1   | /lib/x86_64-linux-gnu/libpthread.so.0(+0x14140)[0x7fe8b7f5d140]
+20220624-rscoord-702-redis-node-6-1   | /usr/lib/redis/module-oss.so(+0x14c87b)[0x7fe8b705b87b]
+20220624-rscoord-702-redis-node-6-1   | /usr/lib/redis/module-oss.so(+0x158407)[0x7fe8b7067407]
+20220624-rscoord-702-redis-node-6-1   | /usr/lib/redis/module-oss.so(+0x158eba)[0x7fe8b7067eba]
+20220624-rscoord-702-redis-node-6-1   | /usr/lib/redis/module-oss.so(+0x222645)[0x7fe8b7131645]
+20220624-rscoord-702-redis-node-6-1   | /usr/lib/redis/module-oss.so(+0x230085)[0x7fe8b713f085]
+20220624-rscoord-702-redis-node-6-1   | /usr/lib/redis/module-oss.so(uv_run+0x104)[0x7fe8b7131eb4]
+20220624-rscoord-702-redis-node-6-1   | /usr/lib/redis/module-oss.so(+0x15804e)[0x7fe8b706704e]
+20220624-rscoord-702-redis-node-6-1   | /lib/x86_64-linux-gnu/libpthread.so.0(+0x8ea7)[0x7fe8b7f51ea7]
+20220624-rscoord-702-redis-node-6-1   | /lib/x86_64-linux-gnu/libc.so.6(clone+0x3f)[0x7fe8b7e81def]
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | ------ REGISTERS ------
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.344 #
+20220624-rscoord-702-redis-node-6-1   | RAX:0000000000001554 RBX:0000000000000000
+20220624-rscoord-702-redis-node-6-1   | RCX:0000000000004000 RDX:0000000000001554
+20220624-rscoord-702-redis-node-6-1   | RDI:00007fe8b73f8ad0 RSI:0000000000000001
+20220624-rscoord-702-redis-node-6-1   | RBP:0000000000000000 RSP:00007fe8b5486060
+20220624-rscoord-702-redis-node-6-1   | R8 :00007fe898000c80 R9 :0000000000000040
+20220624-rscoord-702-redis-node-6-1   | R10:0000000000000200 R11:00007fe8b548b700
+20220624-rscoord-702-redis-node-6-1   | R12:00007fe8b73f8ad0 R13:00007fe8b73fba70
+20220624-rscoord-702-redis-node-6-1   | R14:000055cafae98d30 R15:00007fe8b73fb8c0
+20220624-rscoord-702-redis-node-6-1   | RIP:00007fe8b705b87b EFL:0000000000010202
+20220624-rscoord-702-redis-node-6-1   | CSGSFS:002b000000000033
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.344 # (00007fe8b548606f) -> 000055caf9dafe1b
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.344 # (00007fe8b548606e) -> 00007fe8a7a21018
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.344 # (00007fe8b548606d) -> 00007fe8b5486108
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.344 # (00007fe8b548606c) -> 0000000000000001
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.344 # (00007fe8b548606b) -> 00007fe8b54860b0
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.344 # (00007fe8b548606a) -> 00007fe8b54860b0
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.344 # (00007fe8b5486069) -> 00007fe8b7131645
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.344 # (00007fe8b5486068) -> 00007fe8b54860b0
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.344 # (00007fe8b5486067) -> 0000000000000000
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.344 # (00007fe8b5486066) -> 000055cafae98d40
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.344 # (00007fe8b5486065) -> 00007fe8b7067eba
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.344 # (00007fe8b5486064) -> 00007fe898001070
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.344 # (00007fe8b5486063) -> 00007fe8b7067407
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.344 # (00007fe8b5486062) -> 000055cafae98ca0
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.344 # (00007fe8b5486061) -> 00007fe898001040
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.344 # (00007fe8b5486060) -> 000055cafae98c80
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | ------ INFO OUTPUT ------
+20220624-rscoord-702-redis-node-6-1   | # Server
+20220624-rscoord-702-redis-node-6-1   | redis_version:7.0.2
+20220624-rscoord-702-redis-node-6-1   | redis_git_sha1:00000000
+20220624-rscoord-702-redis-node-6-1   | redis_git_dirty:0
+20220624-rscoord-702-redis-node-6-1   | redis_build_id:40f017f9608e455e
+20220624-rscoord-702-redis-node-6-1   | redis_mode:cluster
+20220624-rscoord-702-redis-node-6-1   | os:Linux 5.10.0-15-amd64 x86_64
+20220624-rscoord-702-redis-node-6-1   | arch_bits:64
+20220624-rscoord-702-redis-node-6-1   | monotonic_clock:POSIX clock_gettime
+20220624-rscoord-702-redis-node-6-1   | multiplexing_api:epoll
+20220624-rscoord-702-redis-node-6-1   | atomicvar_api:c11-builtin
+20220624-rscoord-702-redis-node-6-1   | gcc_version:10.2.1
+20220624-rscoord-702-redis-node-6-1   | process_id:1
+20220624-rscoord-702-redis-node-6-1   | process_supervised:no
+20220624-rscoord-702-redis-node-6-1   | run_id:966494c73bb92ddb7b132456e962abcd9cf23d62
+20220624-rscoord-702-redis-node-6-1   | tcp_port:6378
+20220624-rscoord-702-redis-node-6-1   | server_time_usec:1656091379343704
+20220624-rscoord-702-redis-node-6-1   | uptime_in_seconds:5
+20220624-rscoord-702-redis-node-6-1   | uptime_in_days:0
+20220624-rscoord-702-redis-node-6-1   | hz:10
+20220624-rscoord-702-redis-node-6-1   | configured_hz:10
+20220624-rscoord-702-redis-node-6-1   | lru_clock:11924211
+20220624-rscoord-702-redis-node-6-1   | executable:/usr/src/RediSearch/redis-server
+20220624-rscoord-702-redis-node-6-1   | config_file:/usr/local/etc/redis/redis.conf
+20220624-rscoord-702-redis-node-6-1   | io_threads_active:0
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | # Clients
+20220624-rscoord-702-redis-node-6-1   | connected_clients:1
+20220624-rscoord-702-redis-node-6-1   | cluster_connections:10
+20220624-rscoord-702-redis-node-6-1   | maxclients:10000
+20220624-rscoord-702-redis-node-6-1   | client_recent_max_input_buffer:20480
+20220624-rscoord-702-redis-node-6-1   | client_recent_max_output_buffer:0
+20220624-rscoord-702-redis-node-6-1   | blocked_clients:0
+20220624-rscoord-702-redis-node-6-1   | tracking_clients:0
+20220624-rscoord-702-redis-node-6-1   | clients_in_timeout_table:0
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | # Memory
+20220624-rscoord-702-redis-node-6-1   | used_memory:2034616
+20220624-rscoord-702-redis-node-6-1   | used_memory_human:1.94M
+20220624-rscoord-702-redis-node-6-1   | used_memory_rss:18366464
+20220624-rscoord-702-redis-node-6-1   | used_memory_rss_human:17.52M
+20220624-rscoord-702-redis-node-6-1   | used_memory_peak:2055344
+20220624-rscoord-702-redis-node-6-1   | used_memory_peak_human:1.96M
+20220624-rscoord-702-redis-node-6-1   | used_memory_peak_perc:98.99%
+20220624-rscoord-702-redis-node-6-1   | used_memory_overhead:1802560
+20220624-rscoord-702-redis-node-6-1   | used_memory_startup:1773568
+20220624-rscoord-702-redis-node-6-1   | used_memory_dataset:232056
+20220624-rscoord-702-redis-node-6-1   | used_memory_dataset_perc:88.89%
+20220624-rscoord-702-redis-node-6-1   | allocator_allocated:3023144
+20220624-rscoord-702-redis-node-6-1   | allocator_active:3514368
+20220624-rscoord-702-redis-node-6-1   | allocator_resident:6746112
+20220624-rscoord-702-redis-node-6-1   | total_system_memory:12558188544
+20220624-rscoord-702-redis-node-6-1   | total_system_memory_human:11.70G
+20220624-rscoord-702-redis-node-6-1   | used_memory_lua:31744
+20220624-rscoord-702-redis-node-6-1   | used_memory_vm_eval:31744
+20220624-rscoord-702-redis-node-6-1   | used_memory_lua_human:31.00K
+20220624-rscoord-702-redis-node-6-1   | used_memory_scripts_eval:0
+20220624-rscoord-702-redis-node-6-1   | number_of_cached_scripts:0
+20220624-rscoord-702-redis-node-6-1   | number_of_functions:0
+20220624-rscoord-702-redis-node-6-1   | number_of_libraries:0
+20220624-rscoord-702-redis-node-6-1   | used_memory_vm_functions:32768
+20220624-rscoord-702-redis-node-6-1   | used_memory_vm_total:64512
+20220624-rscoord-702-redis-node-6-1   | used_memory_vm_total_human:63.00K
+20220624-rscoord-702-redis-node-6-1   | used_memory_functions:184
+20220624-rscoord-702-redis-node-6-1   | used_memory_scripts:184
+20220624-rscoord-702-redis-node-6-1   | used_memory_scripts_human:184B
+20220624-rscoord-702-redis-node-6-1   | maxmemory:0
+20220624-rscoord-702-redis-node-6-1   | maxmemory_human:0B
+20220624-rscoord-702-redis-node-6-1   | maxmemory_policy:noeviction
+20220624-rscoord-702-redis-node-6-1   | allocator_frag_ratio:1.16
+20220624-rscoord-702-redis-node-6-1   | allocator_frag_bytes:491224
+20220624-rscoord-702-redis-node-6-1   | allocator_rss_ratio:1.92
+20220624-rscoord-702-redis-node-6-1   | allocator_rss_bytes:3231744
+20220624-rscoord-702-redis-node-6-1   | rss_overhead_ratio:2.72
+20220624-rscoord-702-redis-node-6-1   | rss_overhead_bytes:11620352
+20220624-rscoord-702-redis-node-6-1   | mem_fragmentation_ratio:9.08
+20220624-rscoord-702-redis-node-6-1   | mem_fragmentation_bytes:16343232
+20220624-rscoord-702-redis-node-6-1   | mem_not_counted_for_evict:8
+20220624-rscoord-702-redis-node-6-1   | mem_replication_backlog:0
+20220624-rscoord-702-redis-node-6-1   | mem_total_replication_buffers:0
+20220624-rscoord-702-redis-node-6-1   | mem_clients_slaves:0
+20220624-rscoord-702-redis-node-6-1   | mem_clients_normal:22272
+20220624-rscoord-702-redis-node-6-1   | mem_cluster_links:6528
+20220624-rscoord-702-redis-node-6-1   | mem_aof_buffer:8
+20220624-rscoord-702-redis-node-6-1   | mem_allocator:jemalloc-5.2.1
+20220624-rscoord-702-redis-node-6-1   | active_defrag_running:0
+20220624-rscoord-702-redis-node-6-1   | lazyfree_pending_objects:0
+20220624-rscoord-702-redis-node-6-1   | lazyfreed_objects:0
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | # Persistence
+20220624-rscoord-702-redis-node-6-1   | loading:0
+20220624-rscoord-702-redis-node-6-1   | async_loading:0
+20220624-rscoord-702-redis-node-6-1   | current_cow_peak:0
+20220624-rscoord-702-redis-node-6-1   | current_cow_size:0
+20220624-rscoord-702-redis-node-6-1   | current_cow_size_age:0
+20220624-rscoord-702-redis-node-6-1   | current_fork_perc:0.00
+20220624-rscoord-702-redis-node-6-1   | current_save_keys_processed:0
+20220624-rscoord-702-redis-node-6-1   | current_save_keys_total:0
+20220624-rscoord-702-redis-node-6-1   | rdb_changes_since_last_save:0
+20220624-rscoord-702-redis-node-6-1   | rdb_bgsave_in_progress:0
+20220624-rscoord-702-redis-node-6-1   | rdb_last_save_time:1656091374
+20220624-rscoord-702-redis-node-6-1   | rdb_last_bgsave_status:ok
+20220624-rscoord-702-redis-node-6-1   | rdb_last_bgsave_time_sec:-1
+20220624-rscoord-702-redis-node-6-1   | rdb_current_bgsave_time_sec:-1
+20220624-rscoord-702-redis-node-6-1   | rdb_saves:0
+20220624-rscoord-702-redis-node-6-1   | rdb_last_cow_size:0
+20220624-rscoord-702-redis-node-6-1   | rdb_last_load_keys_expired:0
+20220624-rscoord-702-redis-node-6-1   | rdb_last_load_keys_loaded:0
+20220624-rscoord-702-redis-node-6-1   | aof_enabled:1
+20220624-rscoord-702-redis-node-6-1   | aof_rewrite_in_progress:0
+20220624-rscoord-702-redis-node-6-1   | aof_rewrite_scheduled:0
+20220624-rscoord-702-redis-node-6-1   | aof_last_rewrite_time_sec:-1
+20220624-rscoord-702-redis-node-6-1   | aof_current_rewrite_time_sec:-1
+20220624-rscoord-702-redis-node-6-1   | aof_last_bgrewrite_status:ok
+20220624-rscoord-702-redis-node-6-1   | aof_rewrites:0
+20220624-rscoord-702-redis-node-6-1   | aof_rewrites_consecutive_failures:0
+20220624-rscoord-702-redis-node-6-1   | aof_last_write_status:ok
+20220624-rscoord-702-redis-node-6-1   | aof_last_cow_size:0
+20220624-rscoord-702-redis-node-6-1   | module_fork_in_progress:0
+20220624-rscoord-702-redis-node-6-1   | module_fork_last_cow_size:0
+20220624-rscoord-702-redis-node-6-1   | aof_current_size:0
+20220624-rscoord-702-redis-node-6-1   | aof_base_size:0
+20220624-rscoord-702-redis-node-6-1   | aof_pending_rewrite:0
+20220624-rscoord-702-redis-node-6-1   | aof_buffer_length:0
+20220624-rscoord-702-redis-node-6-1   | aof_pending_bio_fsync:0
+20220624-rscoord-702-redis-node-6-1   | aof_delayed_fsync:0
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | # Stats
+20220624-rscoord-702-redis-node-6-1   | total_connections_received:2
+20220624-rscoord-702-redis-node-6-1   | total_commands_processed:28
+20220624-rscoord-702-redis-node-6-1   | instantaneous_ops_per_sec:7
+20220624-rscoord-702-redis-node-6-1   | total_net_input_bytes:288
+20220624-rscoord-702-redis-node-6-1   | total_net_output_bytes:10797
+20220624-rscoord-702-redis-node-6-1   | total_net_repl_input_bytes:0
+20220624-rscoord-702-redis-node-6-1   | total_net_repl_output_bytes:0
+20220624-rscoord-702-redis-node-6-1   | instantaneous_input_kbps:0.16
+20220624-rscoord-702-redis-node-6-1   | instantaneous_output_kbps:6.50
+20220624-rscoord-702-redis-node-6-1   | instantaneous_input_repl_kbps:0.00
+20220624-rscoord-702-redis-node-6-1   | instantaneous_output_repl_kbps:0.00
+20220624-rscoord-702-redis-node-6-1   | rejected_connections:0
+20220624-rscoord-702-redis-node-6-1   | sync_full:0
+20220624-rscoord-702-redis-node-6-1   | sync_partial_ok:0
+20220624-rscoord-702-redis-node-6-1   | sync_partial_err:0
+20220624-rscoord-702-redis-node-6-1   | expired_keys:0
+20220624-rscoord-702-redis-node-6-1   | expired_stale_perc:0.00
+20220624-rscoord-702-redis-node-6-1   | expired_time_cap_reached_count:0
+20220624-rscoord-702-redis-node-6-1   | expire_cycle_cpu_milliseconds:0
+20220624-rscoord-702-redis-node-6-1   | evicted_keys:0
+20220624-rscoord-702-redis-node-6-1   | evicted_clients:0
+20220624-rscoord-702-redis-node-6-1   | total_eviction_exceeded_time:0
+20220624-rscoord-702-redis-node-6-1   | current_eviction_exceeded_time:0
+20220624-rscoord-702-redis-node-6-1   | keyspace_hits:0
+20220624-rscoord-702-redis-node-6-1   | keyspace_misses:0
+20220624-rscoord-702-redis-node-6-1   | pubsub_channels:0
+20220624-rscoord-702-redis-node-6-1   | pubsub_patterns:0
+20220624-rscoord-702-redis-node-6-1   | latest_fork_usec:0
+20220624-rscoord-702-redis-node-6-1   | total_forks:0
+20220624-rscoord-702-redis-node-6-1   | migrate_cached_sockets:0
+20220624-rscoord-702-redis-node-6-1   | slave_expires_tracked_keys:0
+20220624-rscoord-702-redis-node-6-1   | active_defrag_hits:0
+20220624-rscoord-702-redis-node-6-1   | active_defrag_misses:0
+20220624-rscoord-702-redis-node-6-1   | active_defrag_key_hits:0
+20220624-rscoord-702-redis-node-6-1   | active_defrag_key_misses:0
+20220624-rscoord-702-redis-node-6-1   | total_active_defrag_time:0
+20220624-rscoord-702-redis-node-6-1   | current_active_defrag_time:0
+20220624-rscoord-702-redis-node-6-1   | tracking_total_keys:0
+20220624-rscoord-702-redis-node-6-1   | tracking_total_items:0
+20220624-rscoord-702-redis-node-6-1   | tracking_total_prefixes:0
+20220624-rscoord-702-redis-node-6-1   | unexpected_error_replies:0
+20220624-rscoord-702-redis-node-6-1   | total_error_replies:2
+20220624-rscoord-702-redis-node-6-1   | dump_payload_sanitizations:0
+20220624-rscoord-702-redis-node-6-1   | total_reads_processed:9
+20220624-rscoord-702-redis-node-6-1   | total_writes_processed:8
+20220624-rscoord-702-redis-node-6-1   | io_threaded_reads_processed:0
+20220624-rscoord-702-redis-node-6-1   | io_threaded_writes_processed:0
+20220624-rscoord-702-redis-node-6-1   | reply_buffer_shrinks:1
+20220624-rscoord-702-redis-node-6-1   | reply_buffer_expands:0
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | # Replication
+20220624-rscoord-702-redis-node-6-1   | role:master
+20220624-rscoord-702-redis-node-6-1   | connected_slaves:0
+20220624-rscoord-702-redis-node-6-1   | master_failover_state:no-failover
+20220624-rscoord-702-redis-node-6-1   | master_replid:040daaf5558e27165c462be84c2bec7d58c47648
+20220624-rscoord-702-redis-node-6-1   | master_replid2:0000000000000000000000000000000000000000
+20220624-rscoord-702-redis-node-6-1   | master_repl_offset:0
+20220624-rscoord-702-redis-node-6-1   | second_repl_offset:-1
+20220624-rscoord-702-redis-node-6-1   | repl_backlog_active:0
+20220624-rscoord-702-redis-node-6-1   | repl_backlog_size:1048576
+20220624-rscoord-702-redis-node-6-1   | repl_backlog_first_byte_offset:0
+20220624-rscoord-702-redis-node-6-1   | repl_backlog_histlen:0
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | # CPU
+20220624-rscoord-702-redis-node-6-1   | used_cpu_sys:0.033427
+20220624-rscoord-702-redis-node-6-1   | used_cpu_user:0.042978
+20220624-rscoord-702-redis-node-6-1   | used_cpu_sys_children:0.658843
+20220624-rscoord-702-redis-node-6-1   | used_cpu_user_children:0.041294
+20220624-rscoord-702-redis-node-6-1   | used_cpu_sys_main_thread:0.000000
+20220624-rscoord-702-redis-node-6-1   | used_cpu_user_main_thread:0.001299
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | # Modules
+20220624-rscoord-702-redis-node-6-1   | module:name=search,ver=999999,api=1,filters=0,usedby=[],using=[],options=[]
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | # Commandstats
+20220624-rscoord-702-redis-node-6-1   | cmdstat_cluster|slots:calls=5,usec=131,usec_per_call=26.20,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-6-1   | cmdstat_cluster|info:calls=1,usec=13,usec_per_call=13.00,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-6-1   | cmdstat_cluster|replicate:calls=1,usec=4,usec_per_call=4.00,rejected_calls=0,failed_calls=1
+20220624-rscoord-702-redis-node-6-1   | cmdstat_cluster|set-config-epoch:calls=1,usec=14,usec_per_call=14.00,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-6-1   | cmdstat_cluster|nodes:calls=1,usec=36,usec_per_call=36.00,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-6-1   | cmdstat_cluster|myid:calls=5,usec=12,usec_per_call=2.40,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-6-1   | cmdstat_cluster|meet:calls=1,usec=10,usec_per_call=10.00,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-6-1   | cmdstat_config|get:calls=3,usec=7,usec_per_call=2.33,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-6-1   | cmdstat_info:calls=5,usec=165,usec_per_call=33.00,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-6-1   | cmdstat_incr:calls=0,usec=0,usec_per_call=0.00,rejected_calls=1,failed_calls=0
+20220624-rscoord-702-redis-node-6-1   | cmdstat_search.CLUSTERREFRESH:calls=5,usec=518,usec_per_call=103.60,rejected_calls=0,failed_calls=0
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | # Errorstats
+20220624-rscoord-702-redis-node-6-1   | errorstat_CLUSTERDOWN:count=1
+20220624-rscoord-702-redis-node-6-1   | errorstat_ERR:count=1
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | # Latencystats
+20220624-rscoord-702-redis-node-6-1   | latency_percentiles_usec_cluster|slots:p50=20.095,p99=47.103,p99.9=47.103
+20220624-rscoord-702-redis-node-6-1   | latency_percentiles_usec_cluster|info:p50=13.055,p99=13.055,p99.9=13.055
+20220624-rscoord-702-redis-node-6-1   | latency_percentiles_usec_cluster|replicate:p50=4.015,p99=4.015,p99.9=4.015
+20220624-rscoord-702-redis-node-6-1   | latency_percentiles_usec_cluster|set-config-epoch:p50=14.015,p99=14.015,p99.9=14.015
+20220624-rscoord-702-redis-node-6-1   | latency_percentiles_usec_cluster|nodes:p50=36.095,p99=36.095,p99.9=36.095
+20220624-rscoord-702-redis-node-6-1   | latency_percentiles_usec_cluster|myid:p50=2.007,p99=4.015,p99.9=4.015
+20220624-rscoord-702-redis-node-6-1   | latency_percentiles_usec_cluster|meet:p50=10.047,p99=10.047,p99.9=10.047
+20220624-rscoord-702-redis-node-6-1   | latency_percentiles_usec_config|get:p50=3.007,p99=3.007,p99.9=3.007
+20220624-rscoord-702-redis-node-6-1   | latency_percentiles_usec_info:p50=25.087,p99=79.359,p99.9=79.359
+20220624-rscoord-702-redis-node-6-1   | latency_percentiles_usec_search.CLUSTERREFRESH:p50=89.087,p99=177.151,p99.9=177.151
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | # Cluster
+20220624-rscoord-702-redis-node-6-1   | cluster_enabled:1
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | # Keyspace
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | ------ CLIENT LIST OUTPUT ------
+20220624-rscoord-702-redis-node-6-1   | id=11 addr=172.29.0.30:35780 laddr=172.29.0.36:6378 fd=18 name= age=2 idle=2 flags=N db=0 sub=0 psub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=cluster|meet user=default redir=-1 resp=2
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | ------ MODULES INFO OUTPUT ------
+20220624-rscoord-702-redis-node-6-1   | # search_version
+20220624-rscoord-702-redis-node-6-1   | search_RedisSearch_version:7.0.2
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | # search_index
+20220624-rscoord-702-redis-node-6-1   | search_number_of_indexes:0
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | # search_fields_statistics
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | # search_runtime_configurations
+20220624-rscoord-702-redis-node-6-1   | search_concurrent_mode:OFF
+20220624-rscoord-702-redis-node-6-1   | search_enableGC:ON
+20220624-rscoord-702-redis-node-6-1   | search_minimal_term_prefix:2
+20220624-rscoord-702-redis-node-6-1   | search_maximal_prefix_expansions:200
+20220624-rscoord-702-redis-node-6-1   | search_query_timeout_ms:500
+20220624-rscoord-702-redis-node-6-1   | search_timeout_policy:return
+20220624-rscoord-702-redis-node-6-1   | search_cursor_read_size:1000
+20220624-rscoord-702-redis-node-6-1   | search_cursor_max_idle_time:300000
+20220624-rscoord-702-redis-node-6-1   | search_max_doc_table_size:1000000
+20220624-rscoord-702-redis-node-6-1   | search_max_search_results:1000000
+20220624-rscoord-702-redis-node-6-1   | search_max_aggregate_results:-1
+20220624-rscoord-702-redis-node-6-1   | search_search_pool_size:20
+20220624-rscoord-702-redis-node-6-1   | search_index_pool_size:8
+20220624-rscoord-702-redis-node-6-1   | search_gc_scan_size:100
+20220624-rscoord-702-redis-node-6-1   | search_min_phonetic_term_length:3
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | ------ CONFIG DEBUG OUTPUT ------
+20220624-rscoord-702-redis-node-6-1   | lazyfree-lazy-server-del no
+20220624-rscoord-702-redis-node-6-1   | replica-read-only yes
+20220624-rscoord-702-redis-node-6-1   | list-compress-depth 0
+20220624-rscoord-702-redis-node-6-1   | io-threads-do-reads no
+20220624-rscoord-702-redis-node-6-1   | repl-diskless-sync yes
+20220624-rscoord-702-redis-node-6-1   | client-query-buffer-limit 1gb
+20220624-rscoord-702-redis-node-6-1   | repl-diskless-load disabled
+20220624-rscoord-702-redis-node-6-1   | slave-read-only yes
+20220624-rscoord-702-redis-node-6-1   | activedefrag no
+20220624-rscoord-702-redis-node-6-1   | lazyfree-lazy-expire no
+20220624-rscoord-702-redis-node-6-1   | lazyfree-lazy-eviction no
+20220624-rscoord-702-redis-node-6-1   | lazyfree-lazy-user-del no
+20220624-rscoord-702-redis-node-6-1   | io-threads 1
+20220624-rscoord-702-redis-node-6-1   | sanitize-dump-payload no
+20220624-rscoord-702-redis-node-6-1   | proto-max-bulk-len 512mb
+20220624-rscoord-702-redis-node-6-1   | lazyfree-lazy-user-flush no
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | ------ FAST MEMORY TEST ------
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.345 # main thread terminated
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.345 # Bio thread for job type #0 terminated
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.345 # Bio thread for job type #1 terminated
+20220624-rscoord-702-redis-node-6-1   | 1:M 24 Jun 2022 17:22:59.346 # Bio thread for job type #2 terminated
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | Fast memory test PASSED, however your memory can still be broken. Please run a memory test for several hours if possible.
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | ------ DUMPING CODE AROUND EIP ------
+20220624-rscoord-702-redis-node-6-1   | Symbol: (null) (base: (nil))
+20220624-rscoord-702-redis-node-6-1   | Module: /usr/lib/redis/module-oss.so (base 0x7fe8b6f0f000)
+20220624-rscoord-702-redis-node-6-1   | $ xxd -r -p /tmp/dump.hex /tmp/dump.bin
+20220624-rscoord-702-redis-node-6-1   | $ objdump --adjust-vma=(nil) -D -b binary -m i386:x86-64 /tmp/dump.bin
+20220624-rscoord-702-redis-node-6-1   | ------
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   | === REDIS BUG REPORT END. Make sure to include from START to END. ===
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   |        Please report the crash by opening an issue on github:
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   |            http://github.com/redis/redis/issues
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   |   If a Redis module was involved, please open in the module's repo instead.
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   |   Suspect RAM error? Use redis-server --test-memory to verify it.
+20220624-rscoord-702-redis-node-6-1   |
+20220624-rscoord-702-redis-node-6-1   |   Some other issues could be detected by redis-server --check-system
+20220624-rscoord-702-redis-node-2-1   | [0x7f0254000ea0 172.29.0.33:6375 Connecting]Switching state to Connected
+20220624-rscoord-702-redis-node-5-1 exited with code 139
+20220624-rscoord-702-redis-node-6-1 exited with code 139
+20220624-rscoord-702-redis-node-3-1   | [0x7f760c000d70 172.29.0.32:6374 Connecting]Switching state to Connected
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:23:02.818 # Cluster state changed: ok
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:23:02.820 # Cluster state changed: ok
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:23:02.821 # Cluster state changed: ok
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:23:06.188 * Marking node 35736c45134473348843e39c3ce97180de46a450 as failing (quorum reached).
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:23:06.188 * Marking node a525016630f72e01bf4d7802079079df41523e0e as failing (quorum reached).
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:23:06.188 * FAIL message received from a9160f773dfa624d2eabf9685e17da5cda3832b9 about 35736c45134473348843e39c3ce97180de46a450
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:23:06.187 * Marking node 35736c45134473348843e39c3ce97180de46a450 as failing (quorum reached).
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:23:06.187 * Marking node a525016630f72e01bf4d7802079079df41523e0e as failing (quorum reached).
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:23:06.188 * FAIL message received from a9160f773dfa624d2eabf9685e17da5cda3832b9 about a525016630f72e01bf4d7802079079df41523e0e
+20220624-rscoord-702-redis-node-2-1   | 1:M 24 Jun 2022 17:23:06.600 * Marking node 5f1d24948803d6376f0a5e1ecc4252c5317089d2 as failing (quorum reached).
+20220624-rscoord-702-redis-node-3-1   | 1:M 24 Jun 2022 17:23:06.601 * FAIL message received from 0f2b610a6bcfe366fdfa302dbc7ef7f550bfcfbb about 5f1d24948803d6376f0a5e1ecc4252c5317089d2
+20220624-rscoord-702-redis-node-1-1   | 1:M 24 Jun 2022 17:23:06.601 * FAIL message received from 0f2b610a6bcfe366fdfa302dbc7ef7f550bfcfbb about 5f1d24948803d6376f0a5e1ecc4252c5317089d2
+20220624-rscoord-702-redis-cluster-1  | .....................
+20220624-rscoord-702-redis-cluster-1  | Warning: 1 node(s) may be unreachable
+20220624-rscoord-702-redis-cluster-1  |  - The port 16377 of node 172.29.0.35 may be unreachable from:
+20220624-rscoord-702-redis-cluster-1  |    172.29.0.31:6373
+20220624-rscoord-702-redis-cluster-1  |    172.29.0.33:6375
+20220624-rscoord-702-redis-cluster-1  | Cluster bus ports must be reachable by every node.
+20220624-rscoord-702-redis-cluster-1  | Remember that cluster bus ports are different from standard instance ports.
+^CGracefully stopping... (press Ctrl+C again to force)
+[+] Running 7/7
+ ⠿ Container 20220624-rscoord-702-redis-cluster-1  Stopped                                                                                                                                     10.3s
+ ⠿ Container 20220624-rscoord-702-redis-node-4-1   Stopped                                                                                                                                      0.0s
+ ⠿ Container 20220624-rscoord-702-redis-node-1-1   Stopped                                                                                                                                      0.3s
+ ⠿ Container 20220624-rscoord-702-redis-node-5-1   Stopped                                                                                                                                      0.0s
+ ⠿ Container 20220624-rscoord-702-redis-node-2-1   Stopped                                                                                                                                      0.3s
+ ⠿ Container 20220624-rscoord-702-redis-node-6-1   Stopped                                                                                                                                      0.0s
+ ⠿ Container 20220624-rscoord-702-redis-node-3-1   Stopped                                                                                                                                      0.4s
+canceled
+axel@debian:~/20220624-rscoord-7.0.2$ sudo docker compose down
+[+] Running 8/8
+ ⠿ Container 20220624-rscoord-702-redis-cluster-1  Removed                                                                                                                                      0.0s
+ ⠿ Container 20220624-rscoord-702-redis-node-1-1   Removed                                                                                                                                      0.2s
+ ⠿ Container 20220624-rscoord-702-redis-node-4-1   Removed                                                                                                                                      0.2s
+ ⠿ Container 20220624-rscoord-702-redis-node-5-1   Removed                                                                                                                                      0.2s
+ ⠿ Container 20220624-rscoord-702-redis-node-3-1   Removed                                                                                                                                      0.2s
+ ⠿ Container 20220624-rscoord-702-redis-node-6-1   Removed                                                                                                                                      0.2s
+ ⠿ Container 20220624-rscoord-702-redis-node-2-1   Removed                                                                                                                                      0.2s
+ ⠿ Network 20220624-rscoord-702_app_subnet         Removed                                                                                                                                      0.1s
+axel@debian:~/20220624-rscoord-7.0.2$
